@@ -5,8 +5,7 @@ mkdir -pv $LFS/lib64
 chown -v lfs $LFS/lib64
 
 5.3:
-sed -e '/m64=/s/lib64/lib/' \
-        -i.orig gcc/config/aarch64/t-aarch64-linux
+sed -e '/lp64=/s/lib64/lib/' -i.orig gcc/config/aarch64/t-aarch64-linux
 
 5.5:
     ln -sfv ../lib/ld-linux-aarch64.so.1 $LFS/lib64
@@ -33,8 +32,7 @@ chown --from lfs -R root:root $LFS/lib64
 
 
 8.29
-sed -e '/m64=/s/lib64/lib/' \
-        -i.orig gcc/config/aarch64/t-aarch64-linux
+sed -e '/lp64=/s/lib64/lib/' -i.orig gcc/config/aarch64/t-aarch64-linux
 
 8.79.1
 export PKG_CONFIG_PATH=/usr/lib64/pkgconfig
