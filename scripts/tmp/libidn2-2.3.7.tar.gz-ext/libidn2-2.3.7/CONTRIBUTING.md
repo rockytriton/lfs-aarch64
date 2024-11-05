@@ -1,0 +1,153 @@
+# Libidn2 CONTRIBUTING -- Information for developers
+Copyright (C) 2011-2024 Simon Josefsson
+See the end for copying conditions.
+
+This file contains instructions for developers and advanced users.
+See README for the additional tools you need to have installed.
+
+## Obtaining sources
+
+Download the version controlled sources:
+```
+$ git clone https://gitlab.com/libidn/libidn2.git
+$ cd libidn2
+```
+
+## Dependencies
+
+If you wish to build the project from version controlled sources,
+rebuild all generated files (e.g., run autoreconf), or modify some
+source code files, you will need to have additional tools installed.
+None of the following tools are necessary if you build Libidn2 in the
+usual way (i.e., ./configure && make).
+
+ * [Automake](https://www.gnu.org/software/automake/)
+ * [Autoconf](https://www.gnu.org/software/autoconf/)
+ * [Libtool](https://www.gnu.org/software/libtool/)
+ * [Gettext](https://www.gnu.org/software/gettext/)
+ * [Texinfo](https://www.gnu.org/software/texinfo/)
+ * [Gperf](https://www.gnu.org/software/gperf/)
+ * [Gengetopt](https://www.gnu.org/software/gengetopt/)
+ * [help2man](https://www.gnu.org/software/help2man/)
+ * [Tar](https://www.gnu.org/software/tar/)
+ * [Gzip](https://www.gnu.org/software/gzip/)
+ * [Texlive & epsf](https://www.tug.org/texlive/) (for PDF manual)
+ * [GTK-DOC](https://www.gtk.org/gtk-doc/) (for API manual)
+ * [Git](https://git-scm.com/)
+ * [Perl](https://www.cpan.org/)
+ * [Valgrind](https://valgrind.org/) (optional)
+ * [abi-compliance-checker](https://github.com/lvc/abi-compliance-checker)
+
+The software is typically distributed with your operating system, and
+the instructions for installing them differ.  Here are some hints:
+
+APT/DPKG-based distributions:
+```
+apt-get install make gcc
+apt-get install git autoconf automake libtool gettext autopoint gperf
+apt-get install libunistring-dev valgrind gengetopt help2man
+apt-get install texinfo texlive gtk-doc-tools
+apt-get install abi-compliance-checker abigail-tools
+```
+
+DNF/RPM-based distributions:
+```
+dnf install -y make gcc
+dnf install -y git autoconf automake libtool gettext-devel patch gperf
+dnf install -y libunistring-devel valgrind gengetopt help2man
+dnf install -y texinfo texinfo-tex texlive gtk-doc dblatex
+dnf install -y libabigail
+```
+
+On macOS with Xcode and Homebrew:
+```
+brew install autoconf automake libtool gengetopt help2man texinfo
+```
+
+
+## Building the project
+
+Prepare building with
+```
+$ ./bootstrap
+$ ./configure --enable-gtk-doc --enable-gtk-doc-pdf --enable-gcc-warnings --enable-valgrind-tests
+```
+
+You may want to use `./bootstrap --gnulib-srcdir=/foo/bar/gnulib' (or
+set the `GNULIB_SRCDIR' environment variable) to avoid having to
+checkout gnulib every time.  Make sure the gnulib directory you point
+to is up to date.
+
+Then build the project normally:
+```
+$ make
+$ make check
+```
+
+## Test suite:
+
+New functionality should be accompanied by a test case which verifies
+the correctness of the new functionality as well as under failure.
+The libidn2 test suite is run on "make check".
+
+When adding a new test code, it is better if it builds standalone
+outside of the libidn2 build infrastructure, using only public header
+files and symbols from installed system libidn2 library (or
+libiconv/libunistring).  Exceptions to this rule is permitted, to do
+white box testing, but there should be sufficient black box coverage
+testing of all public APIs through standalone-usable test code.  If
+your test code does both white box and black box testing, please try
+to separate it into two different source code files, so that one of
+them can be used by system integrators to test functionality of the
+installed library.  The CI/CD testing (.gitlab-ci.yml) contains rule
+that attempts to confirm this for the known working test codes.
+
+# Continuous Integration
+
+The project is built auomatically on every git commit using GitLab
+CI/CD, see the file `.gitlab-ci.yml` for rules and [current libidn2
+pipeline](https://gitlab.com/libidn/libidn2/-/pipelines).
+
+# Submitting patches
+
+When submitting patches it is recommended to open a new merge request
+[on the gitlab site](https://gitlab.com/libidn/libidn2), to force the
+changes to pass the automated test suite.
+
+# Cross-compiling
+
+It is possible to cross-compile libidn2.  It is expected that your
+cross compiler toolchain have a specific prefix to the target host.
+For example compiling for Windows with mingw64 (with prefix
+`i686-w64-mingw32`) can be done the following way:
+
+```
+./configure --host=i686-w64-mingw32 && make
+```
+
+Note that you must perform a `make` step using your native compiler
+after the initial `./bootstrap` and `./configure` to generate some
+files.  When cross-compiling from version controlled, you thus need to
+perform a two-step build.  Consider cross-compiling from a tarball
+generated using `make dist` too.
+
+## Release process
+
+Read README-release on how to prepare a new release.  The file is
+generated by running ./bootstrap, see above on building.
+
+Happy hacking!
+
+----------------------------------------------------------------------
+This file is free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the
+Free Software Foundation, either version 3 of the License, or (at your
+option) any later version.
+
+This file is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this file.  If not, see <https://www.gnu.org/licenses/>.
