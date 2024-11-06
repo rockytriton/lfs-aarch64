@@ -5,7 +5,7 @@ ln -s /dev/null /etc/systemd/network/99-default.link
 
 cat > /etc/systemd/network/10-eth-static.network << "EOF"
 [Match]
-Name=<network-device-name>
+Name=eth0
 
 [Network]
 Address=192.168.86.202/24

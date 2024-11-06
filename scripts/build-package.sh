@@ -15,6 +15,7 @@ fi
 . ./extract.sh $url
 
 echo "Building $pck..."
+    echo -ne "\033]0;$pck\007"
 
 cmd="bash -e $SCRIPTS_PATH/packages/$pck.sh > lfs_build.log"
 
