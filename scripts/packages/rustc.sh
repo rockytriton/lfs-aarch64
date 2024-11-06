@@ -13,7 +13,7 @@ change-id = 125535
 
 [llvm]
 # by default, rust will build for a myriad of architectures
-targets = "X86"
+targets = "AArch64"
 
 # When using system llvm prefer shared libraries
 link-shared = true
