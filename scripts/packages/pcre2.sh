@@ -1,5 +1,5 @@
 
-./configure --prefix=/usr                        \
+./configure --prefix=/usr                       \
             --docdir=/usr/share/doc/pcre2-10.44 \
             --enable-unicode                    \
             --enable-jit                        \
@@ -8,7 +8,7 @@
             --enable-pcre2grep-libz             \
             --enable-pcre2grep-libbz2           \
             --enable-pcre2test-libreadline      \
-            --disable-static
+            --disable-static  
 make
 make install
 

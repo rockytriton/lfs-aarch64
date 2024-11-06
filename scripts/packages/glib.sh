@@ -3,15 +3,17 @@ wget https://www.linuxfromscratch.org/patches/blfs/12.2/glib-skip_warnings-1.pat
 
 patch -Np1 -i ../glib-skip_warnings-1.patch
 
-mkdir __build
-cd    __build
+
+mkdir build 
+cd    build 
 
 meson setup ..                  \
       --prefix=/usr             \
       --buildtype=release       \
       -D introspection=disabled \
-      -D man-pages=enabled
+      -D man-pages=enabled      
 ninja
+
 ninja install
 
 tar xf ../../gobject-introspection-1.80.1.tar.xz 
@@ -21,6 +23,6 @@ meson setup gobject-introspection-1.80.1 gi-build \
 ninja -C gi-build
 ninja -C gi-build install
 
-meson configure -D introspection=enabled
+meson configure -D introspection=enabled &&
 ninja
 ninja install
