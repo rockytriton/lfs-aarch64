@@ -15,6 +15,15 @@ pushd $LFS/sources
   md5sum -c md5sums
 popd
 
+#these are needed for BLFS before you can call wget...
+wget    https://ftp.gnu.org/gnu/libidn/libidn2-2.3.7.tar.gz
+wget    https://ftp.gnu.org/gnu/libunistring/libunistring-1.2.tar.xz
+wget    https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.gz
+wget    https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.19.0.tar.gz
+wget    https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz
+wget    https://github.com/lfs-book/make-ca/archive/v1.14/make-ca-1.14.tar.gz
+wget    https://ftp.gnu.org/gnu/wget/wget-1.24.5.tar.gz
+
 chown root:root $LFS/sources/*
 
 groupadd lfs &&

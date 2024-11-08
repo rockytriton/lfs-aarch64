@@ -1,5 +1,4 @@
 #!/bin/bash
-export pname="/dev/sdd1"
 export LFS="/"
 export STAT_PATH=${LFS:?}/usr/share/lfs/installed
 export MAKEFLAGS="-j$(nproc)"
