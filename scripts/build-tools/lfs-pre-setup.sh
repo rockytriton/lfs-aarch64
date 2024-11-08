@@ -23,6 +23,7 @@ wget    https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.19.0.tar.gz
 wget    https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz
 wget    https://github.com/lfs-book/make-ca/archive/v1.14/make-ca-1.14.tar.gz
 wget    https://ftp.gnu.org/gnu/wget/wget-1.24.5.tar.gz
+wget    https://sqlite.org/2024/sqlite-autoconf-3460100.tar.gz
 
 chown root:root $LFS/sources/*
 

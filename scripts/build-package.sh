@@ -19,6 +19,10 @@ echo "Building $pck..."
 
 cmd="bash -e $SCRIPTS_PATH/packages/$pck.sh > lfs_build.log"
 
+if [ "$BUILD_VERBOSE" == "" ]; then
+    export BUILD_VERBOSE=1
+fi
+
 if [ "$BUILD_VERBOSE" == "1" ]; then
     if ! bash -e $SCRIPTS_PATH/packages/$pck.sh; then
         echo ""

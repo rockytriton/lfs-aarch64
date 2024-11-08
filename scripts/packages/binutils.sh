@@ -12,7 +12,10 @@ cd       build
              --enable-new-dtags  \
              --with-system-zlib  \
              --enable-default-hash-style=gnu
+
 make tooldir=/usr
+
 make tooldir=/usr install
 
-rm -fv /usr/lib/lib{bfd,ctf,ctf-nobfd,gprofng,opcodes,sframe}.a
+rm -fv /usr/lib/lib{bfd,ctf,ctf-nobfd,gprofng,opcodes,sframe}.a || echo "no static libs"
+
