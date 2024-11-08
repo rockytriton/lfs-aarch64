@@ -3,6 +3,33 @@ BUNDLE=$1
 
 set -e
 
+if [ "$(stat -c %d:%i /)" == "$(stat -c %d:%i /proc/1/root/)" ]; then
+    echo "Not in a chroot environment!"
+
+    mount=$(df | grep "${LFS}$" | awk '{print $1}')
+
+    if [ "$mount" == "" ]; then
+        echo "${LFS:?} not mounted"
+        exit -1
+    fi
+
+
+    read -p "Change to chroot ${LFS:?}? (y/n): " answer
+
+    if [ "$answer" == "y" ]; then
+        echo "OK"
+        mkdir -p $LFS/usr/share/lfs/scripts/
+        cp -r ./* $LFS/usr/share/lfs/scripts/
+        ./run-in-chroot.sh build.sh $1
+    else
+        echo "NO"
+        exit -1
+    fi
+
+    exit 0
+fi
+
+
 echo "Building bundle ${BUNDLE:?}"
 
 mkdir -p /usr/share/lfs
