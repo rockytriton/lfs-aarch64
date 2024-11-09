@@ -47,5 +47,5 @@ update:
 targets = "AArch64"
 
 
-CDParanoia & Openbox:
+CDParanoia & Openbox & startup-notification & polkit-gnome:
 --build=aarch64-unknown-linux-gnu

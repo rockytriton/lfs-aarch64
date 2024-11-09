@@ -1,0 +1,17 @@
+!import xorg
+at-spi2-core    https://download.gnome.org/sources/at-spi2-core/2.52/at-spi2-core-2.52.0.tar.xz
+gsettings-desktop-schemas    https://download.gnome.org/sources/gsettings-desktop-schemas/46/gsettings-desktop-schemas-46.1.tar.xz
+shared-mime-info    https://gitlab.freedesktop.org/xdg/shared-mime-info/-/archive/2.4/shared-mime-info-2.4.tar.gz
+gdk-pixbuf    https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.12.tar.xz
+pixman    https://www.cairographics.org/releases/pixman-0.43.4.tar.gz
+cairo    https://www.cairographics.org/releases/cairo-1.18.0.tar.xz
+fribidi    https://github.com/fribidi/fribidi/releases/download/v1.0.15/fribidi-1.0.15.tar.xz
+pango    https://download.gnome.org/sources/pango/1.54/pango-1.54.0.tar.xz
+graphviz    https://gitlab.com/graphviz/graphviz/-/archive/12.1.0/graphviz-12.1.0.tar.bz2
+vala    https://download.gnome.org/sources/vala/0.56/vala-0.56.17.tar.xz
+librsvg    https://download.gnome.org/sources/librsvg/2.58/librsvg-2.58.3.tar.xz
+sassc    https://github.com/sass/sassc/archive/3.6.2/sassc-3.6.2.tar.gz
+libxkbcommon    https://xkbcommon.org/download/libxkbcommon-1.7.0.tar.xz
+hicolor-icon-theme    https://icon-theme.freedesktop.org/releases/hicolor-icon-theme-0.18.tar.xz
+gtk3    https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.43.tar.xz
+adwaita-icon-theme    https://download.gnome.org/sources/adwaita-icon-theme/46/adwaita-icon-theme-46.2.tar.xz

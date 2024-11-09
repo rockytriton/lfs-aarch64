@@ -29,8 +29,9 @@ fi
 
 echo "Creating package: $pckname"
 
-echo "$pckname    $url" >> package-list.txt
+echo "$pckname    $url" >> package-list$pcklist.txt
 
+if [ ! -f ./packages/$pckname.sh ]; then
 cat > ./packages/$pckname.sh << "EOF"
 
 mkdir __build
@@ -41,5 +42,6 @@ ninja
 ninja install
 
 EOF
+fi
 
 $editor ./packages/$pckname.sh

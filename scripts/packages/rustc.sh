@@ -48,7 +48,7 @@ description = "for BLFS 12.2"
 lto = "thin"
 codegen-units = 1
 
-[target.x86_64-unknown-linux-gnu]
+[target.aarch64-unknown-linux-gnu]
 # NB the output of llvm-config (i.e. help options) may be
 # dumped to the screen when config.toml is parsed.
 llvm-config = "/usr/bin/llvm-config"
@@ -60,12 +60,25 @@ llvm-config = "/usr/bin/llvm-config"
 EOF
 
 { [ ! -e /usr/include/libssh2.h ] ||
-  export LIBSSH2_SYS_USE_PKG_CONFIG=1; }    &&
+  export LIBSSH2_SYS_USE_PKG_CONFIG=1; }    
 { [ ! -e /usr/include/sqlite3.h ] ||
-  export LIBSQLITE3_SYS_USE_PKG_CONFIG=1; } &&
+  export LIBSQLITE3_SYS_USE_PKG_CONFIG=1; } 
+
+export NINJAJOBS=3
+
+echo ""
+echo "RUNNING PY BUILD"
+echo ""
+
 python3 x.py build
 
-python3 x.py install rustc std &&
+echo ""
+echo "PY INSTALL"
+echo ""
+
+python3 x.py install rustc std 
+
+
 install -vm755 \
   build/host/stage1-tools/*/*/{cargo{,-clippy,-fmt},clippy-driver,rustfmt} \
   /opt/rustc-1.80.1/bin &&

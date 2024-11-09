@@ -6,3 +6,5 @@ meson setup --prefix=/usr --buildtype=release ..
 ninja
 ninja install
 
+
+rm -v /etc/profile.d/vte.*

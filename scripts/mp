@@ -29,8 +29,9 @@ fi
 
 echo "Creating package: $pckname"
 
-echo "$pckname    $url" >> package-list.txt
+echo "$pckname    $url" >> package-list$pcklist.txt
 
+if [ ! -f ./packages/$pckname.sh ]; then
 cat > ./packages/$pckname.sh << "EOF"
 
 ./configure --prefix=/usr --disable-static 
@@ -38,5 +39,7 @@ make
 make install
 
 EOF
+fi 
+
 
 $editor ./packages/$pckname.sh

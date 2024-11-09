@@ -6,7 +6,8 @@ meson setup ..            \
       --prefix=/usr       \
       --buildtype=release \
       -D others=enabled   \
-      --wrap-mode=nofallback
+      --wrap-mode=nofallback 
+      
 ninja
 ninja install
 

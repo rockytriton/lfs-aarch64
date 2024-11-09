@@ -40,3 +40,5 @@ nasm    https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.xz
 libtiff    https://download.osgeo.org/libtiff/tiff-4.6.0.tar.gz
 libjpeg-turbo    https://downloads.sourceforge.net/libjpeg-turbo/libjpeg-turbo-3.0.1.tar.gz
 libpng    https://downloads.sourceforge.net/libpng/libpng-1.6.43.tar.xz
+boost    https://github.com/boostorg/boost/releases/download/boost-1.86.0/boost-1.86.0-b2-nodocs.tar.xz
+libsigc++    https://download.gnome.org/sources/libsigc++/3.6/libsigc++-3.6.0.tar.xz
