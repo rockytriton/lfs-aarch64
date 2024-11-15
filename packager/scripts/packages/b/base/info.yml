@@ -2,6 +2,7 @@ name: "base"
 version: "12.2"
 source: "none"
 dependencies:
+    - filesystem
     - man-pages
     - iana-etc
     - glibc
