@@ -1,5 +1,5 @@
 name: "markup-safe"
-version: ""
+version: "2.1.5"
 source: "MarkupSafe-2.1.5.tar.gz"
 dependencies: []
 extras: []

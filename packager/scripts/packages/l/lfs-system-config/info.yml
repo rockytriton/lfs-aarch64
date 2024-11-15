@@ -1,5 +1,5 @@
 name: "lfs-system-config"
-version: ""
+version: "12.2"
 source: "none"
 dependencies: []
 extras: []

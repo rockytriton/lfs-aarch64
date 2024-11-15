@@ -1,5 +1,5 @@
 name: "attr"
-version: ""
+version: "2.5.2"
 source: "attr-2.5.2.tar.gz"
 dependencies: []
 extras: []

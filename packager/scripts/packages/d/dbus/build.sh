@@ -10,5 +10,5 @@
             --with-system-socket=/run/dbus/system_bus_socket
 
 make
-make install
-ln -sfv /etc/machine-id /var/lib/dbus
+make DESTDIR=$LFS_PCK_DIR install
+

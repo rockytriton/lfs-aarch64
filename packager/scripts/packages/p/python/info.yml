@@ -1,5 +1,5 @@
 name: "python"
-version: ""
+version: "3.12.5"
 source: "Python-3.12.5.tar.xz"
 dependencies: []
 extras: []

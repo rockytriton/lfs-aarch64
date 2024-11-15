@@ -8,5 +8,5 @@
             --with-vgrind=/usr/bin/vgrind         \
             --with-grap=/usr/bin/grap
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 

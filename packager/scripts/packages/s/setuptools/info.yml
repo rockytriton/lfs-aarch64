@@ -1,5 +1,5 @@
 name: "setuptools"
-version: ""
+version: "72.2.0"
 source: "setuptools-72.2.0.tar.gz"
 dependencies: []
 extras: []

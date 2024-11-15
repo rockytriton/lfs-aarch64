@@ -1,5 +1,5 @@
 name: "psmisc"
-version: ""
+version: "23.7"
 source: "psmisc-23.7.tar.xz"
 dependencies: []
 extras: []

@@ -5,5 +5,5 @@
             bash_cv_strtold_broken=no \
             --docdir=/usr/share/doc/bash-5.2.32
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 

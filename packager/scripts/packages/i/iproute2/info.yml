@@ -1,5 +1,5 @@
 name: "iproute2"
-version: ""
+version: "6.10.0"
 source: "iproute2-6.10.0.tar.xz"
 dependencies: []
 extras: []

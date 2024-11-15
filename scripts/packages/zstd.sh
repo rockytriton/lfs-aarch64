@@ -1,4 +1,4 @@
 
 make prefix=/usr
-make prefix=/usr install
-rm -v /usr/lib/libzstd.a
+make DESTDIR=$LFS_PCK_DIR prefix=/usr install
+rm -v $LFS_PCK_DIR/usr/lib/libzstd.a

@@ -1,4 +1,5 @@
+mkdir -p $LFS_PCK_DIR/tmp/
 
-pip3 wheel -w dist --no-cache-dir --no-build-isolation --no-deps $PWD
-pip3 install --no-index --find-links=dist wheel
+pip3 wheel -w $LFS_PCK_DIR/tmp/dist --no-cache-dir --no-build-isolation --no-deps $PWD
+
 

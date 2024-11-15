@@ -1,5 +1,5 @@
 name: "xz"
-version: ""
+version: "5.6.2"
 source: "xz-5.6.2.tar.xz"
 dependencies: []
 extras: []

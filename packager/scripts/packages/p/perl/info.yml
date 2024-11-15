@@ -1,5 +1,5 @@
 name: "perl"
-version: ""
+version: "5.40.0"
 source: "perl-5.40.0.tar.xz"
 dependencies: []
 extras: []

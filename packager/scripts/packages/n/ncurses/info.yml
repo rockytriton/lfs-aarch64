@@ -1,5 +1,5 @@
 name: "ncurses"
-version: ""
+version: "6.5"
 source: "ncurses-6.5.tar.gz"
 dependencies: []
 extras: []

@@ -25,9 +25,9 @@ sed -e "s|$SRCDIR/unix/pkgs/itcl4.2.4|/usr/lib/itcl4.2.4|" \
 
 unset SRCDIR
 
-make install
+make DESTDIR=$LFS_PCK_DIR install
 
-chmod -v u+w /usr/lib/libtcl8.6.so
-make install-private-headers
-ln -sfv tclsh8.6 /usr/bin/tclsh
-mv /usr/share/man/man3/{Thread,Tcl_Thread}.3
+chmod -v u+w $LFS_PCK_DIR/usr/lib/libtcl8.6.so
+make DESTDIR=$LFS_PCK_DIR install-private-headers
+ln -sfv tclsh8.6 $LFS_PCK_DIR/usr/bin/tclsh
+mv $LFS_PCK_DIR/usr/share/man/man3/{Thread,Tcl_Thread}.3

@@ -1,5 +1,5 @@
 name: "texinfo"
-version: ""
+version: "7.1"
 source: "texinfo-7.1.tar.xz"
 dependencies: []
 extras: []

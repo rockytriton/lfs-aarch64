@@ -1,5 +1,5 @@
 name: "lz4"
-version: ""
+version: "1.10.0"
 source: "lz4-1.10.0.tar.gz"
 dependencies: []
 extras: []

@@ -10,5 +10,5 @@ sed -i 's/-Wl,-rpath,[^ ]*//' support/shobj-conf
             --docdir=/usr/share/doc/readline-8.2.13
 
 make SHLIB_LIBS="-lncursesw"   
-make SHLIB_LIBS="-lncursesw" install
-install -v -m644 doc/*.{ps,pdf,html,dvi} /usr/share/doc/readline-8.2.13
+make SHLIB_LIBS="-lncursesw" DESTDIR=$LFS_PCK_DIR install
+install -v -m644 doc/*.{ps,pdf,html,dvi} $LFS_PCK_DIR/usr/share/doc/readline-8.2.13

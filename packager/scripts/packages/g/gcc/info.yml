@@ -1,5 +1,5 @@
 name: "gcc"
-version: ""
+version: "14.2.0"
 source: "gcc-14.2.0.tar.xz"
 dependencies: []
 extras: []

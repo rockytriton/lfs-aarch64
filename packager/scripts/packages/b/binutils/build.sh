@@ -15,7 +15,7 @@ cd       build
 
 make tooldir=/usr
 
-make tooldir=/usr install
+make DESTDIR=$LFS_PCK_DIR tooldir=/usr install
 
-rm -fv /usr/lib/lib{bfd,ctf,ctf-nobfd,gprofng,opcodes,sframe}.a || echo "no static libs"
+rm -fv $LFS_PCK_DIR/usr/lib/lib{bfd,ctf,ctf-nobfd,gprofng,opcodes,sframe}.a || echo "no static libs"
 

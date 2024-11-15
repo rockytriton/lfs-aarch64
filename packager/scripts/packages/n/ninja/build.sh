@@ -7,7 +7,8 @@ sed -i '/int Guess/a \
 
 python3 configure.py --bootstrap
 
+mkdir -p $LFS_PCK_DIR/usr/bin/
 
-install -vm755 ninja /usr/bin/
-install -vDm644 misc/bash-completion /usr/share/bash-completion/completions/ninja
-install -vDm644 misc/zsh-completion  /usr/share/zsh/site-functions/_ninja
+install -vm755 ninja $LFS_PCK_DIR/usr/bin/
+install -vDm644 misc/bash-completion $LFS_PCK_DIR/usr/share/bash-completion/completions/ninja
+install -vDm644 misc/zsh-completion  $LFS_PCK_DIR/usr/share/zsh/site-functions/_ninja

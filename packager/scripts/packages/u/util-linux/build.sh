@@ -17,5 +17,5 @@
             --docdir=/usr/share/doc/util-linux-2.40.2
             
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 

@@ -1,5 +1,5 @@
 name: "m4"
-version: ""
+version: "1.4.19"
 source: "m4-1.4.19.tar.xz"
 dependencies: []
 extras: []

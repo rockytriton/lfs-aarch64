@@ -6,6 +6,6 @@
          zlib-dynamic
 make
 sed -i '/INSTALL_LIBS/s/libcrypto.a libssl.a//' Makefile
-make MANSUFFIX=ssl install
+make DESTDIR=$LFS_PCK_DIR MANSUFFIX=ssl install
 
-mv -v /usr/share/doc/openssl /usr/share/doc/openssl-3.3.1
+mv -v $LFS_PCK_DIR/usr/share/doc/openssl $LFS_PCK_DIR/usr/share/doc/openssl-3.3.1

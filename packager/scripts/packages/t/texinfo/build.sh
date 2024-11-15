@@ -1,11 +1,6 @@
 
 ./configure --prefix=/usr 
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 
-pushd /usr/share/info
-  rm -v dir
-  for f in *
-    do install-info $f dir 2>/dev/null
-  done
-popd
+

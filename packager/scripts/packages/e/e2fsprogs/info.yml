@@ -1,5 +1,5 @@
 name: "e2fsprogs"
-version: ""
+version: "1.47.1"
 source: "e2fsprogs-1.47.1.tar.gz"
 dependencies: []
 extras: []

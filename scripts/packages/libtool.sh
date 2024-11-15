@@ -1,6 +1,6 @@
 
 ./configure --prefix=/usr 
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 
-rm -fv /usr/lib/libltdl.a
+rm -fv $LFS_PCK_DIR/usr/lib/libltdl.a

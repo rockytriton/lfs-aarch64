@@ -1,5 +1,5 @@
 name: "libpipeline"
-version: ""
+version: "1.5.7"
 source: "libpipeline-1.5.7.tar.gz"
 dependencies: []
 extras: []

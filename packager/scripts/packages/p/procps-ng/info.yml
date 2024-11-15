@@ -1,5 +1,5 @@
 name: "procps-ng"
-version: ""
+version: "4.0.4"
 source: "procps-ng-4.0.4.tar.xz"
 dependencies: []
 extras: []

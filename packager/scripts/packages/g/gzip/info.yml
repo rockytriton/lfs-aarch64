@@ -1,5 +1,5 @@
 name: "gzip"
-version: ""
+version: "1.13"
 source: "gzip-1.13.tar.xz"
 dependencies: []
 extras: []

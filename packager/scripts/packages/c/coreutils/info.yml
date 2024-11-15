@@ -1,5 +1,5 @@
 name: "coreutils"
-version: ""
+version: "9.5"
 source: "coreutils-9.5.tar.xz"
 dependencies: []
 extras: []

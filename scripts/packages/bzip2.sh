@@ -9,14 +9,18 @@ make -f Makefile-libbz2_so
 make clean
 
 make
-make PREFIX=/usr install
 
-cp -av libbz2.so.* /usr/lib
-ln -sv libbz2.so.1.0.8 /usr/lib/libbz2.so
+mkdir -p $LFS_PCK_DIR/usr/lib
+mkdir -p $LFS_PCK_DIR/usr/bin
 
-cp -v bzip2-shared /usr/bin/bzip2
-for i in /usr/bin/{bzcat,bunzip2}; do
+make PREFIX=$LFS_PCK_DIR/usr install
+
+cp -av libbz2.so.* $LFS_PCK_DIR/usr/lib
+ln -sv libbz2.so.1.0.8 $LFS_PCK_DIR/usr/lib/libbz2.so
+
+cp -v bzip2-shared $LFS_PCK_DIR/usr/bin/bzip2
+for i in $LFS_PCK_DIR/usr/bin/{bzcat,bunzip2}; do
   ln -sfv bzip2 $i
 done
 
-rm -fv /usr/lib/libbz2.a
+rm -fv $LFS_PCK_DIR/usr/lib/libbz2.a

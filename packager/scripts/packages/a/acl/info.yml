@@ -1,5 +1,5 @@
 name: "acl"
-version: ""
+version: "2.3.2"
 source: "acl-2.3.2.tar.xz"
 dependencies: []
 extras: []

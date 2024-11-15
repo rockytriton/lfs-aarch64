@@ -1,5 +1,5 @@
 name: "kmod"
-version: ""
+version: "33"
 source: "kmod-33.tar.xz"
 dependencies: []
 extras: []

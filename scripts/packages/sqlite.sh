@@ -7,5 +7,5 @@
                       -D SQLITE_ENABLE_DBSTAT_VTAB=1     \
                       -D SQLITE_SECURE_DELETE=1"
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 

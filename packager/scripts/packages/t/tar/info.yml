@@ -1,5 +1,5 @@
 name: "tar"
-version: ""
+version: "1.35"
 source: "tar-1.35.tar.xz"
 dependencies: []
 extras: []

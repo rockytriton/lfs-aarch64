@@ -1,5 +1,5 @@
 name: "libcap"
-version: ""
+version: "2.70"
 source: "libcap-2.70.tar.xz"
 dependencies: []
 extras: []

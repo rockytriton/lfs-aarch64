@@ -1,5 +1,5 @@
 name: "expect"
-version: ""
+version: "5.45.4"
 source: "expect5.45.4.tar.gz"
 dependencies: []
 extras: []

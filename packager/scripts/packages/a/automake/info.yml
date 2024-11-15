@@ -1,5 +1,5 @@
 name: "automake"
-version: ""
+version: "1.17"
 source: "automake-1.17.tar.xz"
 dependencies: []
 extras: []

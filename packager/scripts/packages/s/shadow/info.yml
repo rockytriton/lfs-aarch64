@@ -1,5 +1,5 @@
 name: "shadow"
-version: ""
+version: "4.16.0"
 source: "shadow-4.16.0.tar.xz"
 dependencies: []
 extras: []

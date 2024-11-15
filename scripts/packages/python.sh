@@ -5,9 +5,11 @@ CXX="/usr/bin/g++"               \
             --with-system-expat  \
             --enable-optimizations 
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 
-cat > /etc/pip.conf << EOF
+mkdir -p $LFS_PCK_DIR/etc
+
+cat > $LFS_PCK_DIR/etc/pip.conf << EOF
 [global]
 root-user-action = ignore
 disable-pip-version-check = true

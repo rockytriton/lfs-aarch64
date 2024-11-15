@@ -1,5 +1,5 @@
 name: "meson"
-version: ""
+version: "1.5.1"
 source: "meson-1.5.1.tar.gz"
 dependencies: []
 extras: []

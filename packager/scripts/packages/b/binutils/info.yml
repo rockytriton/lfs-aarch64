@@ -1,5 +1,5 @@
 name: "binutils"
-version: ""
+version: "2.43.1"
 source: "binutils-2.43.1.tar.xz"
 dependencies: []
 extras: []

@@ -1,5 +1,5 @@
 
 ./configure --prefix=/usr --disable-static   --enable-libgdbm-compat
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 

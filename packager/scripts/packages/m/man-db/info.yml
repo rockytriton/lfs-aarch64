@@ -1,5 +1,5 @@
 name: "man-db"
-version: ""
+version: "2.12.1"
 source: "man-db-2.12.1.tar.xz"
 dependencies: []
 extras: []

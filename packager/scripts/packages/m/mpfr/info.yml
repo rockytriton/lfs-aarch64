@@ -1,5 +1,5 @@
 name: "mpfr"
-version: ""
+version: "4.2.1"
 source: "mpfr-4.2.1.tar.xz"
 dependencies: []
 extras: []

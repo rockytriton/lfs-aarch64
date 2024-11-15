@@ -1,5 +1,5 @@
 name: "file"
-version: ""
+version: "5.45"
 source: "file-5.45.tar.gz"
 dependencies: []
 extras: []

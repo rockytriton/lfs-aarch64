@@ -6,6 +6,7 @@ echo depends bli part_gpt > grub-core/extra_deps.lst
             --disable-efiemu       \
             --disable-werror
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 
-mv -v /etc/bash_completion.d/grub /usr/share/bash-completion/completions
+mkdir -p $LFS_PCK_DIR/usr/share/bash-completion/completions
+mv -v $LFS_PCK_DIR/etc/bash_completion.d/grub $LFS_PCK_DIR/usr/share/bash-completion/completions

@@ -1,8 +1,9 @@
 #!/bin/bash
 
 function is_installed {
-   pck=$1
-   if grep -Fx $pck /usr/share/lfs/installed; then
+   check_pck=$1
+
+   if [ "$(grep -Fx $check_pck /usr/share/lfs/installed)" == "$check_pck" ] ; then
       return 0
    fi
 

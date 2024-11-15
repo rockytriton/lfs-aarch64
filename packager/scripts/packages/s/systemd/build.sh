@@ -27,12 +27,10 @@ meson setup ..                \
       -D docdir=/usr/share/doc/systemd-256.4
 
 ninja
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install
+
+mkdir -p $LFS_PCK_DIR/usr/share/man
 
 tar -xf ../../systemd-man-pages-256.4.tar.xz \
     --no-same-owner --strip-components=1   \
-    -C /usr/share/man
-
-systemd-machine-id-setup
-
-systemctl preset-all
+    -C $LFS_PCK_DIR/usr/share/man

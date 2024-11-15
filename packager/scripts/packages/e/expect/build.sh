@@ -14,8 +14,8 @@ patch -Np1 -i ../expect-5.45.4-gcc14-1.patch
             --with-tclinclude=/usr/include \
             --build=aarch64-unknown-linux-gnu
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 
 echo linking...
-ln -svf expect5.45.4/libexpect5.45.4.so /usr/lib
+ln -svf expect5.45.4/libexpect5.45.4.so $LFS_PCK_DIR/usr/lib
 echo linked.

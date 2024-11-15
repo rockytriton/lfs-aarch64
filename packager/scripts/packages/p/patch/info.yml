@@ -1,5 +1,5 @@
 name: "patch"
-version: ""
+version: "2.7.6"
 source: "patch-2.7.6.tar.xz"
 dependencies: []
 extras: []

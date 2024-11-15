@@ -7,5 +7,5 @@ sed -i 's/resizecons.8 //' docs/man/man8/Makefile.in
 
 ./configure --prefix=/usr --disable-vlock
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 

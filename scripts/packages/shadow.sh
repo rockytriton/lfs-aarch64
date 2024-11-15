@@ -9,7 +9,8 @@ sed -e 's:#ENCRYPT_METHOD DES:ENCRYPT_METHOD YESCRYPT:' \
     -e '/PATH=/{s@/sbin:@@;s@/bin:@@}'                  \
     -i etc/login.defs
 
-touch /usr/bin/passwd
+mkdir -p $LFS_PCK_DIR/usr/bin
+touch $LFS_PCK_DIR/usr/bin/passwd
 ./configure --sysconfdir=/etc   \
             --disable-static    \
             --with-{b,yes}crypt \
@@ -17,11 +18,6 @@ touch /usr/bin/passwd
             --with-group-name-max-length=32
 
 make
-make exec_prefix=/usr install
-make -C man install-man
-pwconv
-grpconv
-mkdir -p /etc/default
-useradd -D --gid 999
-
-sed -i '/MAIL/s/yes/no/' /etc/default/useradd
+make DESTDIR=$LFS_PCK_DIR exec_prefix=/usr install
+make -C man DESTDIR=$LFS_PCK_DIR install-man
+mkdir -p $LFS_PCK_DIR/etc/default

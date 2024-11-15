@@ -1,5 +1,5 @@
 name: "bison"
-version: ""
+version: "3.8.2"
 source: "bison-3.8.2.tar.xz"
 dependencies: []
 extras: []

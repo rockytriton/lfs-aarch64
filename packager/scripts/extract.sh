@@ -13,6 +13,8 @@ filename=./tmp/$(basename $url)
 work_dir=$filename-ext
 downloaded=0
 
+echo "Extract: $url"
+
 if [ "$url" == "none" ]; then
     echo "No url, using tmp-work-dir"
     work_dir=./tmp/tmp-work-dir

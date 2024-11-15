@@ -1,5 +1,5 @@
 name: "gdbm"
-version: ""
+version: "1.24"
 source: "gdbm-1.24.tar.gz"
 dependencies: []
 extras: []

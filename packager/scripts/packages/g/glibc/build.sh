@@ -17,18 +17,22 @@ echo "rootsbindir=/usr/sbin" > configparms
 
 make
 
-touch /etc/ld.so.conf
+mkdir -p $LFS_PCK_DIR/etc
+
+touch $LFS_PCK_DIR/etc/ld.so.conf
 sed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile
 
-make install
+make DESTDIR=$LFS_PCK_DIR install
 
-sed '/RTLDLIST=/s@/usr@@g' -i /usr/bin/ldd
+sed '/RTLDLIST=/s@/usr@@g' -i $LFS_PCK_DIR/usr/bin/ldd
 
-localedef -i C -f UTF-8 C.UTF-8
-localedef -i en_US -f ISO-8859-1 en_US
-localedef -i en_US -f UTF-8 en_US.UTF-8
+mkdir -p $LFS_PCK_DIR/usr/lib/locale/
 
-cat > /etc/nsswitch.conf << "EOF"
+localedef -i C -f UTF-8 $LFS_PCK_DIR/usr/lib/locale/C.UTF-8 
+localedef -i en_US -f ISO-8859-1 $LFS_PCK_DIR/usr/lib/locale/en_US
+localedef -i en_US -f UTF-8 $LFS_PCK_DIR/usr/lib/locale/en_US.UTF-8
+
+cat > $LFS_PCK_DIR/etc/nsswitch.conf << "EOF"
 # Begin /etc/nsswitch.conf
 
 passwd: files systemd
@@ -48,7 +52,7 @@ EOF
 
 tar -xf ../../tzdata2024a.tar.gz
 
-ZONEINFO=/usr/share/zoneinfo
+ZONEINFO=$LFS_PCK_DIR/usr/share/zoneinfo
 mkdir -pv $ZONEINFO/{posix,right}
 
 for tz in etcetera southamerica northamerica europe africa antarctica  \
@@ -62,9 +66,9 @@ cp -v zone.tab zone1970.tab iso3166.tab $ZONEINFO
 zic -d $ZONEINFO -p America/New_York
 unset ZONEINFO
 
-ln -sfv /usr/share/zoneinfo/America/Chicago /etc/localtime
+ln -sfv /usr/share/zoneinfo/America/Chicago $LFS_PCK_DIR/etc/localtime
 
-cat > /etc/ld.so.conf << "EOF"
+cat > $LFS_PCK_DIR/etc/ld.so.conf << "EOF"
 # Begin /etc/ld.so.conf
 /usr/local/lib
 /opt/lib
@@ -74,5 +78,5 @@ include /etc/ld.so.conf.d/*.conf
 
 EOF
 
-mkdir -pv /etc/ld.so.conf.d
+mkdir -pv $LFS_PCK_DIR/etc/ld.so.conf.d
 
