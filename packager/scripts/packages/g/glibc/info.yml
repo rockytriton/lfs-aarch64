@@ -1,0 +1,5 @@
+name: "glibc"
+version: ""
+source: "glibc-2.40.tar.xz"
+dependencies: []
+extras: []

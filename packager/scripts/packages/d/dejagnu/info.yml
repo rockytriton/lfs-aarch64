@@ -1,0 +1,5 @@
+name: "dejagnu"
+version: ""
+source: "dejagnu-1.6.3.tar.gz"
+dependencies: []
+extras: []

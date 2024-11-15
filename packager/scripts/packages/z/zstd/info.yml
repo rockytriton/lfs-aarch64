@@ -1,0 +1,5 @@
+name: "zstd"
+version: ""
+source: "zstd-1.5.6.tar.gz"
+dependencies: []
+extras: []

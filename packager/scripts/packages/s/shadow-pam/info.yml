@@ -1,0 +1,5 @@
+name: "shadow-pam"
+version: ""
+source: "https://github.com/shadow-maint/shadow/releases/download/4.16.0/shadow-4.16.0.tar.xz"
+dependencies: []
+extras: []

@@ -1,0 +1,5 @@
+name: "kbd"
+version: ""
+source: "kbd-2.6.4.tar.xz"
+dependencies: []
+extras: []

@@ -1,0 +1,5 @@
+name: "gcc"
+version: ""
+source: "gcc-14.2.0.tar.xz"
+dependencies: []
+extras: []

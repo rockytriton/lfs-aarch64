@@ -1,0 +1,5 @@
+name: "packaging"
+version: ""
+source: "https://files.pythonhosted.org/packages/source/p/packaging/packaging-24.1.tar.gz"
+dependencies: []
+extras: []

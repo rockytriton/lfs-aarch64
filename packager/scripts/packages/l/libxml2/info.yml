@@ -1,0 +1,5 @@
+name: "libxml2"
+version: ""
+source: "https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.3.tar.xz"
+dependencies: []
+extras: []

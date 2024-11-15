@@ -1,0 +1,5 @@
+name: "ninja"
+version: ""
+source: "ninja-1.12.1.tar.gz"
+dependencies: []
+extras: []

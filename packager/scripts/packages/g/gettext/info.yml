@@ -1,0 +1,5 @@
+name: "gettext"
+version: ""
+source: "gettext-0.22.5.tar.xz"
+dependencies: []
+extras: []

@@ -1,0 +1,5 @@
+name: "pkgconf"
+version: ""
+source: "pkgconf-2.3.0.tar.xz"
+dependencies: []
+extras: []

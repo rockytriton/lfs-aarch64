@@ -1,0 +1,5 @@
+name: "attr"
+version: ""
+source: "attr-2.5.2.tar.gz"
+dependencies: []
+extras: []

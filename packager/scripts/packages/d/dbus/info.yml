@@ -1,0 +1,5 @@
+name: "dbus"
+version: ""
+source: "dbus-1.14.10.tar.xz"
+dependencies: []
+extras: []

@@ -1,0 +1,5 @@
+name: "sudo"
+version: ""
+source: "https://www.sudo.ws/dist/sudo-1.9.15p5.tar.gz"
+dependencies: []
+extras: []

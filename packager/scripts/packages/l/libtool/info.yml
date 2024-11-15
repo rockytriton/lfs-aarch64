@@ -1,0 +1,5 @@
+name: "libtool"
+version: ""
+source: "libtool-2.4.7.tar.xz"
+dependencies: []
+extras: []

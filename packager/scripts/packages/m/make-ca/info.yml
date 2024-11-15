@@ -1,0 +1,5 @@
+name: "make-ca"
+version: ""
+source: "https://github.com/lfs-book/make-ca/archive/v1.14/make-ca-1.14.tar.gz"
+dependencies: []
+extras: []

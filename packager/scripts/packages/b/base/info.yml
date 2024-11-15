@@ -1,0 +1,8 @@
+name: "base"
+version: "12.2"
+source: ""
+dependencies:
+    - "man-pages"
+    - "grep"
+    - "gcc"
+extras: []

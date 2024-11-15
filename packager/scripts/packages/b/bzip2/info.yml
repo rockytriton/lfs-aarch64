@@ -1,0 +1,5 @@
+name: "bzip2"
+version: ""
+source: "bzip2-1.0.8.tar.gz"
+dependencies: []
+extras: []

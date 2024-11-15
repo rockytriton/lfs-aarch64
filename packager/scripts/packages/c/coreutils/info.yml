@@ -1,0 +1,5 @@
+name: "coreutils"
+version: ""
+source: "coreutils-9.5.tar.xz"
+dependencies: []
+extras: []

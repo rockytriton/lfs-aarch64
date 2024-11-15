@@ -1,0 +1,5 @@
+name: "iana-etc"
+version: ""
+source: "iana-etc-20240806.tar.gz"
+dependencies: []
+extras: []

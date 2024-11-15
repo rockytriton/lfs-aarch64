@@ -1,0 +1,45 @@
+#!/bin/bash
+# Utility to make a package
+# Usage: ./mp <URL> [Name]
+# If name not given, will try to get it from tar filename
+
+url=$1
+pckname=$2
+editor=code
+
+generate_name() {
+    pckname=$1
+    arr=(${pckname//-/ })
+    name_elements=$(expr ${#arr[@]} - 2)
+    name=${arr[0]}
+
+    for i in $(seq 1 $name_elements);
+    do
+        name="$name-${arr[$i]}"
+    done
+
+    echo $name
+}
+
+if [ "$pckname" == "" ]; then
+    bn=$(basename $url)
+    pckname=${bn%.t*}
+    pckname=$(generate_name $pckname)
+fi
+
+echo "Creating package: $pckname"
+
+echo "$pckname    $url" >> package-list$pcklist.txt
+
+if [ ! -f ./packages/$pckname.sh ]; then
+cat > ./packages/$pckname.sh << "EOF"
+
+./configure --prefix=/usr --disable-static 
+make
+make install
+
+EOF
+fi 
+
+
+$editor ./packages/$pckname.sh

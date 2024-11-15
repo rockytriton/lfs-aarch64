@@ -1,0 +1,5 @@
+name: "man-pages"
+version: "6.9.1"
+source: "man-pages-6.9.1.tar.xz"
+dependencies: []
+extras: []

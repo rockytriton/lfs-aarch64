@@ -1,0 +1,5 @@
+name: "flit-core"
+version: ""
+source: "flit_core-3.9.0.tar.gz"
+dependencies: []
+extras: []

@@ -1,0 +1,5 @@
+name: "bc"
+version: ""
+source: "bc-6.7.6.tar.xz"
+dependencies: []
+extras: []

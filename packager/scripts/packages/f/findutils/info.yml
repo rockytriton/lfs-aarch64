@@ -1,0 +1,5 @@
+name: "findutils"
+version: ""
+source: "findutils-4.10.0.tar.xz"
+dependencies: []
+extras: []

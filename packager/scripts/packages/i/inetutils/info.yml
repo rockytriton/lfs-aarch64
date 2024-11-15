@@ -1,0 +1,5 @@
+name: "inetutils"
+version: ""
+source: "inetutils-2.5.tar.xz"
+dependencies: []
+extras: []

@@ -1,0 +1,5 @@
+name: "diffutils"
+version: ""
+source: "diffutils-3.10.tar.xz"
+dependencies: []
+extras: []

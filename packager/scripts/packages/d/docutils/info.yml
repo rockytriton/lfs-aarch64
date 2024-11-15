@@ -1,0 +1,5 @@
+name: "docutils"
+version: ""
+source: "https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.21.2.tar.gz"
+dependencies: []
+extras: []

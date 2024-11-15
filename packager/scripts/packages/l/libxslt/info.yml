@@ -1,0 +1,5 @@
+name: "libxslt"
+version: ""
+source: "https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.42.tar.xz"
+dependencies: []
+extras: []

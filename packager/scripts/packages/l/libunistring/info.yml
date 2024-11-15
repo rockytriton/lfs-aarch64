@@ -1,0 +1,5 @@
+name: "libunistring"
+version: ""
+source: "https://ftp.gnu.org/gnu/libunistring/libunistring-1.2.tar.xz"
+dependencies: []
+extras: []

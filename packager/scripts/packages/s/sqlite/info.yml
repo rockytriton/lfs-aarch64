@@ -1,0 +1,5 @@
+name: "sqlite"
+version: ""
+source: "sqlite-autoconf-3460100.tar.gz"
+dependencies: []
+extras: []

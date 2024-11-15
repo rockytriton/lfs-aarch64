@@ -1,0 +1,5 @@
+name: "duktape"
+version: ""
+source: "https://duktape.org/duktape-2.7.0.tar.xz"
+dependencies: []
+extras: []

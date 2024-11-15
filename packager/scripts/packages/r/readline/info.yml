@@ -1,0 +1,5 @@
+name: "readline"
+version: ""
+source: "readline-8.2.13.tar.gz"
+dependencies: []
+extras: []

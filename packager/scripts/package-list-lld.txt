@@ -1,0 +1,10 @@
+!import xfce
+c-ares    https://github.com/c-ares/c-ares/releases/download/v1.33.0/c-ares-1.33.0.tar.gz
+brotli    https://github.com/google/brotli/archive/v1.1.0/brotli-1.1.0.tar.gz
+node    https://nodejs.org/dist/v20.16.0/node-v20.16.0.tar.xz
+unzip    https://downloads.sourceforge.net/infozip/unzip60.tar.gz
+nspr    https://archive.mozilla.org/pub/nspr/releases/v4.35/src/nspr-4.35.tar.gz
+nss    https://archive.mozilla.org/pub/security/nss/releases/NSS_3_103_RTM/src/nss-3.103.tar.gz
+libwebp    https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.4.0.tar.gz
+libevent    https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz
+firefox    https://archive.mozilla.org/pub/firefox/releases/128.1.0esr/source/firefox-128.1.0esr.source.tar.xz

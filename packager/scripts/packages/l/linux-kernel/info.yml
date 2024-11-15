@@ -1,0 +1,5 @@
+name: "linux-kernel"
+version: ""
+source: "linux-6.10.5.tar.xz"
+dependencies: []
+extras: []

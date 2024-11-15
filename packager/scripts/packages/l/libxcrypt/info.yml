@@ -1,0 +1,5 @@
+name: "libxcrypt"
+version: ""
+source: "libxcrypt-4.4.36.tar.xz"
+dependencies: []
+extras: []

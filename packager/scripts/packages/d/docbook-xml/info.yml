@@ -1,0 +1,5 @@
+name: "docbook-xml"
+version: ""
+source: "https://github.com/rockytriton/lfs-fix-packages/raw/refs/heads/main/docbook-xml-4.5.txz"
+dependencies: []
+extras: []

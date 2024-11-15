@@ -1,0 +1,5 @@
+name: "bash"
+version: ""
+source: "bash-5.2.32.tar.gz"
+dependencies: []
+extras: []

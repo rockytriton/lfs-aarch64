@@ -1,0 +1,5 @@
+name: "intltool"
+version: ""
+source: "intltool-0.51.0.tar.gz"
+dependencies: []
+extras: []

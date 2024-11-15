@@ -1,0 +1,5 @@
+name: "autoconf"
+version: ""
+source: "autoconf-2.72.tar.xz"
+dependencies: []
+extras: []

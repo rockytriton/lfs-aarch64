@@ -1,0 +1,5 @@
+name: "openssl"
+version: ""
+source: "openssl-3.3.1.tar.gz"
+dependencies: []
+extras: []
