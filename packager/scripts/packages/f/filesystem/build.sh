@@ -5,6 +5,9 @@ for i in bin lib sbin; do
     ln -sv usr/$i $LFS_PCK_DIR/$i
 done
 
+ln -sfv ../lib/ld-linux-aarch64.so.1 $LFS_PCK_DIR/lib64/ld-linux-aarch64.so.1
+ln -sfv ../lib/ld-linux-aarch64.so.1 $LFS_PCK_DIR/lib64/ld-lsb-aarch64.so.1
+
 mkdir -pv $LFS_PCK_DIR/{boot,home,mnt,opt,srv}
 mkdir -pv $LFS_PCK_DIR/etc/{opt,sysconfig}
 mkdir -pv $LFS_PCK_DIR/lib/firmware
