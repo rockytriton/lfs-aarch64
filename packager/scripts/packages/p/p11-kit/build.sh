@@ -14,9 +14,12 @@ cd    __build
 
 meson setup --prefix=/usr --buildtype=release -D trust_paths=/etc/pki/anchors
 ninja
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install
+
+mkdir -p $LFS_PCK_DIR/usr/bin/
+mkdir -p $LFS_PCK_DIR/usr/lib/
 
 ln -sfv /usr/libexec/p11-kit/trust-extract-compat \
-        /usr/bin/update-ca-certificates
+        $LFS_PCK_DIR/usr/bin/update-ca-certificates
 
-ln -sfv ./pkcs11/p11-kit-trust.so /usr/lib/libnssckbi.so
+ln -sfv ./pkcs11/p11-kit-trust.so $LFS_PCK_DIR/usr/lib/libnssckbi.so

@@ -2,5 +2,5 @@
 ./configure --prefix=/usr --sysconfdir=/etc  \
             --with-ssl=openssl
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 

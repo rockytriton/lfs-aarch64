@@ -1,5 +1,5 @@
 name: "wget"
-version: ""
+version: "1.24.5"
 source: "https://ftp.gnu.org/gnu/wget/wget-1.24.5.tar.gz"
 dependencies: []
 extras: []

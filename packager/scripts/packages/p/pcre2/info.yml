@@ -1,5 +1,5 @@
 name: "pcre2"
-version: ""
+version: "2.10.44"
 source: "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.44/pcre2-10.44.tar.bz2"
 dependencies: []
 extras: []

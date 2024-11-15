@@ -1,5 +1,5 @@
 cd source
 ./configure --prefix=/usr 
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 

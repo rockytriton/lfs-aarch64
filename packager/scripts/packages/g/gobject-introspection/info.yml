@@ -1,0 +1,6 @@
+name: "gobject-introspection"
+version: "1.80.1"
+source: "https://download.gnome.org/sources/gobject-introspection/1.80/gobject-introspection-1.80.1.tar.xz"
+dependencies:
+  - glib
+extras: []

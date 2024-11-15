@@ -85,4 +85,28 @@ dependencies:
     - lfs-cleanup
     - lfs-system-config
     - linux-kernel
+    - libidn2
+    - libunistring
+    - libpsl
+    - libtasn1
+    - p11-kit
+    - make-ca
+    - wget
+    - libtirpc
+    - linux-pam
+    - packaging
+    - docutils
+    - icu
+    - libxml2
+    - docbook-xsl-nons
+    - docbook-xml
+    - libxslt
+    - pcre2
+    - glib-obj-intro
+    - duktape
+    - systemd-pam
+    - shadow-pam
+    - sudo
+    - bash-startup-files
+    - openssh
 extras: []

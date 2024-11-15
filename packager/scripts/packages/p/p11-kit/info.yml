@@ -1,5 +1,5 @@
 name: "p11-kit"
-version: ""
+version: "0.25.5"
 source: "https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz"
 dependencies: []
 extras: []

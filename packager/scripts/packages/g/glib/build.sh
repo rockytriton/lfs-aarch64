@@ -14,15 +14,4 @@ meson setup ..                  \
       -D man-pages=enabled      
 ninja
 
-ninja install
-
-tar xf ../../gobject-introspection-1.80.1.tar.xz 
-
-meson setup gobject-introspection-1.80.1 gi-build \
-            --prefix=/usr --buildtype=release     
-ninja -C gi-build
-ninja -C gi-build install
-
-meson configure -D introspection=enabled &&
-ninja
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install

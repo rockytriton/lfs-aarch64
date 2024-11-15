@@ -1,5 +1,5 @@
 name: "openssh"
-version: ""
+version: "9.8p1"
 source: "https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.8p1.tar.gz"
 dependencies: []
 extras: []

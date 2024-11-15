@@ -1,5 +1,5 @@
 name: "libidn2"
-version: ""
+version: "2.3.7"
 source: "https://ftp.gnu.org/gnu/libidn/libidn2-2.3.7.tar.gz"
 dependencies: []
 extras: []
