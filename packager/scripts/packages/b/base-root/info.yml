@@ -3,6 +3,7 @@ version: "12.2"
 source: "none"
 dependencies:
     - filesystem
+    - linux-headers
     - man-pages
     - iana-etc
     - glibc
