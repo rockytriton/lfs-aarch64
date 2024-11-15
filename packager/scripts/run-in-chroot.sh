@@ -17,5 +17,11 @@ chroot "$LFS" /usr/bin/env -i   \
     PATH=/usr/bin:/usr/sbin     \
     MAKEFLAGS="-j$(nproc)"      \
     TESTSUITEFLAGS="-j$(nproc)" \
-    /bin/bash --login -c "cd /usr/share/lfs/scripts/ && . /usr/share/lfs/scripts/env.sh && . /usr/share/lfs/scripts/$1 $2"
+    /bin/bash --login -c "cd /install && $1"
 
+umount -v $LFS/dev/pts
+mountpoint -q $LFS/dev/shm && umount -v $LFS/dev/shm
+umount -v $LFS/dev
+umount -v $LFS/run
+umount -v $LFS/proc
+umount -v $LFS/sys

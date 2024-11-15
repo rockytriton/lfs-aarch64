@@ -2,10 +2,10 @@
 
 set -e
 
+INSTPATH=${LFS:?}
+
 source ./util.sh
 source ./env.sh
-
-mkdir -p $LFS_BIN_DIR
 
 pck=${1:?}
 pckpath=packages/${pck:0:1}/$pck
@@ -16,12 +16,17 @@ if ! test -f $pckfile; then
     exit -1
 fi
 
-if is_installed $pck ; then
+if [ ! -f $LFS/usr/share/lfs/installed ]; then
+    mkdir -p $LFS/usr/share/lfs/
+    touch $LFS/usr/share/lfs/installed
+fi
+
+if [ "$(grep -Fx $pck $LFS/usr/share/lfs/installed)" == "$pck" ] ; then
     echo "Package installed"
     exit 0
 fi
 
-deps=($(pck-read $pckfile dependencies))
+deps=($(pck-read/pck-read $pckfile dependencies))
 
 num_deps=${#deps[@]}
 
@@ -32,7 +37,7 @@ if (( $num_deps > 0 )); then
 
     for dep in "${deps[@]}"
     do
-        if ! is_installed $dep ; then
+        if [ ! "$(grep -Fx $dep $LFS/usr/share/lfs/installed)" == "$dep" ] ; then
             echo "$dep not installed"
             install_deps+=($dep)
         fi
@@ -56,8 +61,8 @@ sleep 1
 rm -rf ${LFS_PCK_DIR:?}
 mkdir -p $LFS_PCK_DIR
 
-url=$(pck-read $pckfile source)
-ver=$(pck-read $pckfile version)
+url=$(pck-read/pck-read $pckfile source)
+ver=$(pck-read/pck-read $pckfile version)
 
 if [ "$ver" == "" ]; then
     echo "Invalid Version!"
@@ -66,8 +71,20 @@ fi
 
 echo "Installing package..."
 
-bash -e pck-install.sh $pck $ver
+SCDIR=$(pwd)
 
-echo $pck >> /usr/share/lfs/installed
+cd ${LFS:?}/
+
+rm -rf ${LFS:?}/install
+tar -xhf $SCDIR/../../bin/$pck-$ver-pck.txz
+
+if [ -d ./install ]; then
+    echo "Need to run installer..."
+    $SCDIR/run-in-chroot.sh "bash -e install.sh"
+    rm -rf ${LFS:?}/install
+
+fi
+
+echo $pck >> $LFS/usr/share/lfs/installed
 
 echo "Marked package installed: $pck"

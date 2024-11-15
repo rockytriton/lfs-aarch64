@@ -54,4 +54,5 @@ dependencies:
     - libffi
     - sqlite
     - python
+    - coreutils
 extras: []

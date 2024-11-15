@@ -8,7 +8,6 @@ dependencies:
     - setuptools
     - ninja
     - meson
-    - coreutils
     - check
     - diffutils
     - gawk
