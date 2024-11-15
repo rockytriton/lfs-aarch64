@@ -3,6 +3,11 @@ BUNDLE=$1
 
 RUNROOT=$RUNROOT
 
+export LFS_PCK_DIR=/tmp/pckdir
+export LFS_BIN_DIR=/usr/share/lfs/bin
+
+mkdir -p $LFS_BIN_DIR
+
 set -e
 
 if [ "$RUNROOT" == "1" ]; then
@@ -47,6 +52,7 @@ do
     fields=($line)
     pck=${fields[0]}
     url=${fields[1]}
+    ver=${fields[2]}
 
     if [[ $pck == \#* ]]; then
         continue
@@ -59,7 +65,18 @@ do
 
     echo "Processing: $pck..."
 
+    rm -rf ${LFS_PCK_DIR:?}
+    mkdir -p $LFS_PCK_DIR
+
     bash -e build-package.sh $pck $url
+
+    echo "Package build complete, creating package file..."
+
+    bash -e create-package.sh $pck $ver
+
+    echo "Installing package..."
+    
+    bash -e install-package.sh $pck $ver
 
     echo $pck >> /usr/share/lfs/installed
 

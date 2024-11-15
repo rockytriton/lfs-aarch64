@@ -1,3 +1,3 @@
 
 rm -v man3/crypt*
-make prefix=/usr install
+make DESTDIR=$LFS_PCK_DIR prefix=/usr install

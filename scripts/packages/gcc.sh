@@ -16,19 +16,26 @@ cd       build
              --with-system-zlib
 
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
+
+mkdir -p $LFS_PCK_DIR/usr/lib/gcc/$(gcc -dumpmachine)/14.2.0/include
+mkdir -p $LFS_PCK_DIR/usr/lib/gcc/$(gcc -dumpmachine)/14.2.0/include-fixed
 
 chown -v -R root:root \
-    /usr/lib/gcc/$(gcc -dumpmachine)/14.2.0/include{,-fixed}
+    $LFS_PCK_DIR/usr/lib/gcc/$(gcc -dumpmachine)/14.2.0/include{,-fixed}
 
-ln -svr /usr/bin/cpp /usr/lib
-ln -sv gcc.1 /usr/share/man/man1/cc.1
+mkdir -p $LFS_PCK_DIR/usr/lib/bfd-plugins
+mkdir -p $LFS_PCK_DIR/usr/bin
+mkdir -p $LFS_PCK_DIR/usr/share/man/man1/
+
+ln -svr /usr/bin/cpp $LFS_PCK_DIR/usr/lib
+ln -sv gcc.1 $LFS_PCK_DIR/usr/share/man/man1/cc.1
 ln -sfv ../../libexec/gcc/$(gcc -dumpmachine)/14.2.0/liblto_plugin.so \
-        /usr/lib/bfd-plugins/
+        $LFS_PCK_DIR/usr/lib/bfd-plugins/
 
 echo 'int main(){}' > dummy.c
 cc dummy.c -v -Wl,--verbose &> dummy.log
 readelf -l a.out | grep ': /lib'
 
-mkdir -pv /usr/share/gdb/auto-load/usr/lib
-mv -v /usr/lib/*gdb.py /usr/share/gdb/auto-load/usr/lib
+mkdir -pv $LFS_PCK_DIR/usr/share/gdb/auto-load/usr/lib
+mv -v $LFS_PCK_DIR/usr/lib/*gdb.py $LFS_PCK_DIR/usr/share/gdb/auto-load/usr/lib

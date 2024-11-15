@@ -1,5 +1,5 @@
 
 ./configure --prefix=/usr 
 make
-make install
-rm -fv /usr/lib/libz.a
+make DESTDIR=$LFS_PCK_DIR install
+rm -fv $LFS_PCK_DIR/usr/lib/libz.a

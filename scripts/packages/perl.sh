@@ -18,7 +18,7 @@ sh Configure -des                                          \
              -D usethreads
 
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 
 
 unset BUILD_ZLIB BUILD_BZIP2
