@@ -21,6 +21,8 @@ mkdir -pv $LFS_PCK_DIR/usr/{,local/}share/man/man{1..8}
 mkdir -pv $LFS_PCK_DIR/var/{cache,local,log,mail,opt,spool}
 mkdir -pv $LFS_PCK_DIR/var/lib/{color,misc,locate}
 
+mkdir -pv $LFS_PCK_DIR/var/lib/hwclock
+
 ln -sfv /run $LFS_PCK_DIR/var/run
 ln -sfv /run/lock $LFS_PCK_DIR/var/lock
 

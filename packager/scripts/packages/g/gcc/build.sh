@@ -39,3 +39,6 @@ readelf -l a.out | grep ': /lib'
 
 mkdir -pv $LFS_PCK_DIR/usr/share/gdb/auto-load/usr/lib
 mv -v $LFS_PCK_DIR/usr/lib/*gdb.py $LFS_PCK_DIR/usr/share/gdb/auto-load/usr/lib
+
+ln -sv gcc $LFS_PCK_DIR/usr/bin/cc
+
