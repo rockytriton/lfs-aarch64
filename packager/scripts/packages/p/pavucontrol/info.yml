@@ -1,0 +1,5 @@
+name: "pavucontrol"
+version: "6.1"
+source: "https://www.freedesktop.org/software/pulseaudio/pavucontrol/pavucontrol-6.1.tar.xz"
+dependencies: []
+extras: []

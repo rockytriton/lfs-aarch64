@@ -1,0 +1,5 @@
+name: "lxde-icon-theme"
+version: "0.5.1"
+source: "https://downloads.sourceforge.net/lxde/lxde-icon-theme-0.5.1.tar.xz"
+dependencies: []
+extras: []

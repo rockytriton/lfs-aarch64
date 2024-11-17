@@ -1,0 +1,5 @@
+name: "thunar"
+version: "4.18.11"
+source: "https://archive.xfce.org/src/xfce/thunar/4.18/thunar-4.18.11.tar.bz2"
+dependencies: []
+extras: []

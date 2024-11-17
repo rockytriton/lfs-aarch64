@@ -1,0 +1,5 @@
+name: "cairomm"
+version: "1.18.0"
+source: "https://www.cairographics.org/releases/cairomm-1.18.0.tar.xz"
+dependencies: []
+extras: []

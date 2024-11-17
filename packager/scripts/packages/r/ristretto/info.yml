@@ -1,0 +1,5 @@
+name: "ristretto"
+version: "0.13.2"
+source: "https://archive.xfce.org/src/apps/ristretto/0.13/ristretto-0.13.2.tar.bz2"
+dependencies: []
+extras: []

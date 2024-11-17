@@ -1,0 +1,5 @@
+name: "garcon"
+version: "4.18.2"
+source: "https://archive.xfce.org/src/xfce/garcon/4.18/garcon-4.18.2.tar.bz2"
+dependencies: []
+extras: []

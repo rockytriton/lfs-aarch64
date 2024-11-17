@@ -1,5 +1,5 @@
 name: "nettle"
-version: ""
+version: "3.10"
 source: "https://ftp.gnu.org/gnu/nettle/nettle-3.10.tar.gz"
 dependencies: []
 extras: []

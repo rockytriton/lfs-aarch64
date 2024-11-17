@@ -1,0 +1,5 @@
+name: "libwnck"
+version: "43.0"
+source: "https://download.gnome.org/sources/libwnck/43/libwnck-43.0.tar.xz"
+dependencies: []
+extras: []

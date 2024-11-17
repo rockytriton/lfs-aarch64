@@ -34,6 +34,8 @@ install -v -dm755 -o lightdm -g lightdm $LFS_PCK_DIR/var/lib/lightdm-data
 install -v -dm755 -o lightdm -g lightdm $LFS_PCK_DIR/var/cache/lightdm    
 install -v -dm770 -o lightdm -g lightdm $LFS_PCK_DIR/var/log/lightdm
 
+cp -r $LFS_PCK_DIR/* /
+
 tar -xf ../lightdm-gtk-greeter-2.0.9.tar.gz 
 cd lightdm-gtk-greeter-2.0.9 
 

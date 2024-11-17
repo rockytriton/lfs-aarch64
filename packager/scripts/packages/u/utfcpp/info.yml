@@ -1,0 +1,5 @@
+name: "utfcpp"
+version: "4.0.5"
+source: "https://github.com/nemtrif/utfcpp/archive/v4.0.5/utfcpp-4.0.5.tar.gz"
+dependencies: []
+extras: []

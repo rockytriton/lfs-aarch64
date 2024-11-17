@@ -1,0 +1,5 @@
+name: "polkit-gnome"
+version: "0.105"
+source: "https://ftp2.osuosl.org/pub/blfs/conglomeration/polkit-gnome/polkit-gnome-0.105.tar.xz"
+dependencies: []
+extras: []

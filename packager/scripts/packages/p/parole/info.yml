@@ -1,0 +1,5 @@
+name: "parole"
+version: "4.18.1"
+source: "https://archive.xfce.org/src/apps/parole/4.18/parole-4.18.1.tar.bz2"
+dependencies: []
+extras: []

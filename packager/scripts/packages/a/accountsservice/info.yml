@@ -1,0 +1,5 @@
+name: "accountsservice"
+version: "23.13.9"
+source: "https://www.freedesktop.org/software/accountsservice/accountsservice-23.13.9.tar.xz"
+dependencies: []
+extras: []

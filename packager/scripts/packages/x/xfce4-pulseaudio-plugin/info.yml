@@ -1,0 +1,5 @@
+name: "xfce4-pulseaudio-plugin"
+version: "0.4"
+source: "https://archive.xfce.org/src/panel-plugins/xfce4-pulseaudio-plugin/0.4/xfce4-pulseaudio-plugin-0.4.8.tar.bz2"
+dependencies: []
+extras: []

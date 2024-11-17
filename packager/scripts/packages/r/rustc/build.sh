@@ -1,5 +1,5 @@
-mkdir -pv /opt/rustc-1.80.1      
-ln -svfn rustc-1.80.1 /opt/rustc
+mkdir -pv $LFS_PCK_DIR/opt/rustc-1.80.1      
+ln -svfn rustc-1.80.1 $LFS_PCK_DIR/opt/rustc
 
 cat << EOF > config.toml
 # see config.toml.example for more possible options

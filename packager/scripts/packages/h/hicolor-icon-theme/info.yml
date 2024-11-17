@@ -1,5 +1,5 @@
 name: "hicolor-icon-theme"
-version: ""
+version: "0.18"
 source: "https://icon-theme.freedesktop.org/releases/hicolor-icon-theme-0.18.tar.xz"
 dependencies: []
 extras: []

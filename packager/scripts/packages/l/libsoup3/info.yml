@@ -1,5 +1,5 @@
 name: "libsoup3"
-version: "3.4.4
+version: "3.4.4"
 source: "https://ftp2.osuosl.org/pub/blfs/conglomeration/libsoup/libsoup-3.4.4.tar.xz"
 dependencies: []
 extras: []

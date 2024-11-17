@@ -1,0 +1,5 @@
+name: "libnotify"
+version: "0.8.3"
+source: "https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.3.tar.xz"
+dependencies: []
+extras: []

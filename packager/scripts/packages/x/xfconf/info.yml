@@ -1,0 +1,5 @@
+name: "xfconf"
+version: "4.18.3"
+source: "https://archive.xfce.org/src/xfce/xfconf/4.18/xfconf-4.18.3.tar.bz2"
+dependencies: []
+extras: []

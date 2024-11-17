@@ -1,0 +1,5 @@
+name: "taglib"
+version: "2.0.1"
+source: "https://taglib.org/releases/taglib-2.0.1.tar.gz"
+dependencies: []
+extras: []

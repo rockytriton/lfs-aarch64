@@ -23,6 +23,7 @@ do
     ./configure $XORG_CONFIG
     make
     make DESTDIR=$LFS_PCK_DIR install
+    cp -r $LFS_PCK_DIR/* /
   popd
   rm -rf $packagedir
   /sbin/ldconfig

@@ -1,0 +1,5 @@
+name: "atkmm"
+version: "2.36.3"
+source: "https://download.gnome.org/sources/atkmm/2.36/atkmm-2.36.3.tar.xz"
+dependencies: []
+extras: []

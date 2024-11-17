@@ -1,0 +1,5 @@
+name: "glu"
+version: "9.0.3"
+source: "https://archive.mesa3d.org/glu/glu-9.0.3.tar.xz"
+dependencies: []
+extras: []

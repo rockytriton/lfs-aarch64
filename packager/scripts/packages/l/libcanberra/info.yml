@@ -1,0 +1,5 @@
+name: "libcanberra"
+version: "0.30"
+source: "https://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz"
+dependencies: []
+extras: []

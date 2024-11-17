@@ -1,0 +1,5 @@
+name: "desktop-file-utils"
+version: "0.27"
+source: "https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.27.tar.xz"
+dependencies: []
+extras: []

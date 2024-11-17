@@ -1,0 +1,5 @@
+name: "dbus-glib"
+version: "0.112"
+source: "https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.112.tar.gz"
+dependencies: []
+extras: []

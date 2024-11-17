@@ -1,0 +1,60 @@
+name: "xfce"
+version: "12.2"
+source: "none"
+dependencies:
+  - gtk3
+  - gtk4
+  - adwaita-icon-theme
+  - libxfce4util          
+  - xfconf                
+  - startup-notification   
+  - libxfce4ui            
+  - exo                   
+  - garcon                
+  - libwnck               
+  - xfce4-panel           
+  - libnotify             
+  - thunar                
+  - libgudev              
+  - thunar-volman         
+  - tumbler               
+  - xfce4-appfinder        
+  - polkit                
+  - upower                
+  - xfce4-power-manager    
+  - lxde-icon-theme       
+  - libvorbis             
+  - libcanberra           
+  - libxklavier           
+  - xfce4-settings         
+  - xfdesktop             
+  - xfwm4                 
+  - desktop-file-utils     
+  - glu                   
+  - xscreensaver          
+  - accountsservice        
+  - polkit-gnome           
+  - xfce4-session         
+  - utfcpp                
+  - taglib                
+  - dbus-glib             
+  - parole                
+  - vte                   
+  - xfce4-terminal        
+  - libexif               
+  - ristretto             
+  - xfce4-dev-tools       
+  - xfce4-notifyd         
+  - keybinder-3.0          
+  - cairomm               
+  - glibmm                
+  - pangomm               
+  - glibmm                
+  - atkmm                 
+  - gtkmm                 
+  - json-glib             
+  - pavucontrol           
+  - xfce4-pulseaudio-plugin
+  - itstool               
+  - lightdm               
+extras: []

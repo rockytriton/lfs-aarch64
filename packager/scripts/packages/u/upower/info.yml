@@ -1,0 +1,5 @@
+name: "upower"
+version: "1.90.4"
+source: "https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.4/upower-v1.90.4.tar.bz2"
+dependencies: []
+extras: []

@@ -1,0 +1,5 @@
+name: "libxfce4util"
+version: "4.18.2"
+source: "https://archive.xfce.org/src/xfce/libxfce4util/4.18/libxfce4util-4.18.2.tar.bz2"
+dependencies: []
+extras: []

@@ -1,0 +1,5 @@
+name: "lightdm"
+version: "1.32.0"
+source: "https://github.com/CanonicalLtd/lightdm/releases/download/1.32.0/lightdm-1.32.0.tar.xz"
+dependencies: []
+extras: []

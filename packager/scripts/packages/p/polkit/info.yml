@@ -1,0 +1,5 @@
+name: "polkit"
+version: "125"
+source: "https://github.com/polkit-org/polkit/archive/125/polkit-125.tar.gz"
+dependencies: []
+extras: []

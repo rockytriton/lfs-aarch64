@@ -1,0 +1,5 @@
+name: "itstool"
+version: "2.0.7"
+source: "https://files.itstool.org/itstool/itstool-2.0.7.tar.bz2"
+dependencies: []
+extras: []

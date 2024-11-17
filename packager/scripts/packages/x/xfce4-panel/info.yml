@@ -1,0 +1,5 @@
+name: "xfce4-panel"
+version: "4.18.6"
+source: "https://archive.xfce.org/src/xfce/xfce4-panel/4.18/xfce4-panel-4.18.6.tar.bz2"
+dependencies: []
+extras: []
