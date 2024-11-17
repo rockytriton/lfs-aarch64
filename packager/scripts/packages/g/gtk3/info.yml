@@ -16,7 +16,5 @@ dependencies:
   - librsvg   
   - sassc    
   - libxkbcommon    
-  - hicolor-icon-theme    
-  - gtk3
-  - adwaita-icon-theme
+  - hicolor-icon-theme
 extras: []

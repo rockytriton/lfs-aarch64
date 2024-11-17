@@ -18,17 +18,23 @@ useradd  -c "Lightdm Daemon" \
             --docdir=/usr/share/doc/lightdm-1.32.0 
 
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 
-cp tests/src/lightdm-session /usr/bin                         
-sed -i '1 s/sh/bash --login/' /usr/bin/lightdm-session        
-rm -rf /etc/init                                              
-install -v -dm755 -o lightdm -g lightdm /var/lib/lightdm      
-install -v -dm755 -o lightdm -g lightdm /var/lib/lightdm-data 
-install -v -dm755 -o lightdm -g lightdm /var/cache/lightdm    
-install -v -dm770 -o lightdm -g lightdm /var/log/lightdm
+mkdir -p $LFS_PCK_DIR/usr/bin/
+mkdir -p $LFS_PCK_DIR/var/lib/
+mkdir -p $LFS_PCK_DIR/var/cache
+mkdir -p $LFS_PCK_DIR/var/log
 
-tar -xf ../lightdm-gtk-greeter-2.0.9.tar.gz &&
+
+cp tests/src/lightdm-session $LFS_PCK_DIR/usr/bin                         
+sed -i '1 s/sh/bash --login/' $LFS_PCK_DIR/usr/bin/lightdm-session        
+rm -rf $LFS_PCK_DIR/etc/init                                              
+install -v -dm755 -o lightdm -g lightdm $LFS_PCK_DIR/var/lib/lightdm      
+install -v -dm755 -o lightdm -g lightdm $LFS_PCK_DIR/var/lib/lightdm-data 
+install -v -dm755 -o lightdm -g lightdm $LFS_PCK_DIR/var/cache/lightdm    
+install -v -dm770 -o lightdm -g lightdm $LFS_PCK_DIR/var/log/lightdm
+
+tar -xf ../lightdm-gtk-greeter-2.0.9.tar.gz 
 cd lightdm-gtk-greeter-2.0.9 
 
 ./configure --prefix=/usr                 \
@@ -44,9 +50,9 @@ cd lightdm-gtk-greeter-2.0.9
             --docdir=/usr/share/doc/lightdm-gtk-greeter-2.0.9 
 make
 
-make install
+make DESTDIR=$LFS_PCK_DIR install
 
 
 . $SCRIPTS_PATH/extract.sh https://www.linuxfromscratch.org/blfs/downloads/12.2-systemd/blfs-systemd-units-20240801.tar.xz
-make install-lightdm
+make DESTDIR=$LFS_PCK_DIR install-lightdm
 

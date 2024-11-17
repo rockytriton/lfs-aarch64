@@ -4,10 +4,10 @@ patch -Np1 -i ../polkit-gnome-0.105-consolidated_fixes-1.patch
 
 ./configure --prefix=/usr --build=aarch64-unknown-linux-gnu
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 
-mkdir -p /etc/xdg/autostart &&
-cat > /etc/xdg/autostart/polkit-gnome-authentication-agent-1.desktop << "EOF"
+mkdir -p $LFS_PCK_DIR/etc/xdg/autostart 
+cat > $LFS_PCK_DIR/etc/xdg/autostart/polkit-gnome-authentication-agent-1.desktop << "EOF"
 [Desktop Entry]
 Name=PolicyKit Authentication Agent
 Comment=PolicyKit Authentication Agent

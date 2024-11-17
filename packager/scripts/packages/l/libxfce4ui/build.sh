@@ -1,4 +1,4 @@
 ./configure --prefix=/usr --sysconfdir=/etc 
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 

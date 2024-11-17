@@ -1,5 +1,5 @@
 
 ./configure --prefix=/usr --disable-static --sysconfdir=/etc 
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 

@@ -8,9 +8,9 @@ meson setup --prefix=/usr       \
             -D man=false        \
             ..   
 ninja
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install
 
-if [ -e /usr/share/doc/libnotify ]; then
-  rm -rf /usr/share/doc/libnotify-0.8.3
-  mv -v  /usr/share/doc/libnotify{,-0.8.3}
+if [ -e $LFS_PCK_DIR/usr/share/doc/libnotify ]; then
+  rm -rf $LFS_PCK_DIR/usr/share/doc/libnotify-0.8.3
+  mv -v  $LFS_PCK_DIR/usr/share/doc/libnotify{,-0.8.3}
 fi

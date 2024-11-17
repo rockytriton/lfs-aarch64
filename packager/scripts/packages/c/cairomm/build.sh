@@ -8,5 +8,5 @@ meson setup ..             \
       -D build-tests=true  \
       -D boost-shared=true 
 ninja
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install
 

@@ -4,7 +4,6 @@ cd    __build
 
 meson setup --prefix=/usr --buildtype=release ..
 ninja
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install
 
-
-rm -v /etc/profile.d/vte.*
+rm -fv $LFS_PCK_DIR/etc/profile.d/vte.*

@@ -9,10 +9,10 @@ meson setup --prefix=/usr            \
             -D vulkan=disabled       \
             ..
 ninja
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install
 
-mkdir -pv /etc/gtk-4.0
-cat > /etc/gtk-4.0/settings.ini << "EOF"
+mkdir -pv $LFS_PCK_DIR/etc/gtk-4.0
+cat > $LFS_PCK_DIR/etc/gtk-4.0/settings.ini << "EOF"
 [Settings]
 gtk-theme-name = Adwaita
 gtk-icon-theme-name = hicolor

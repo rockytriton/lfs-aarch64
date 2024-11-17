@@ -20,5 +20,5 @@ do
         echo "extras: []" >> $pckfile
     fi
 
-done < "package-list-gtk4.txt"
+done < "package-list-xfce.txt"
 

@@ -8,4 +8,4 @@ meson setup ..            \
       -D man=false        
 ninja
 
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install

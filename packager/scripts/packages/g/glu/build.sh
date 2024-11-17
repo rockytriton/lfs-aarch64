@@ -7,6 +7,6 @@ meson setup ..              \
       -D gl_provider=gl     \
       --buildtype=release 
 ninja
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install
 
-rm -vf /usr/lib/libGLU.a
+rm -vf $LFS_PCK_DIR/usr/lib/libGLU.a

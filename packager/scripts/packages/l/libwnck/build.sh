@@ -3,5 +3,5 @@ cd    build
 
 meson setup --prefix=/usr --buildtype=release .. 
 ninja
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install
 

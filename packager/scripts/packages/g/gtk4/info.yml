@@ -1,5 +1,40 @@
 name: "gtk4"
-version: ""
+version: "4.14.5"
 source: "https://download.gnome.org/sources/gtk/4.14/gtk-4.14.5.tar.xz"
 dependencies: []
+  - xorg
+  - at-spi2-core             
+  - gsettings-desktop-schemasr.xz
+  - shared-mime-info         
+  - gdk-pixbuf               
+  - pixman                   
+  - cairo                    
+  - graphviz                 
+  - vala                     
+  - librsvg                  
+  - graphene                 
+  - fribidi                  
+  - pycairo                  
+  - pygobject                
+  - gstreamer                
+  - cdparanoia               
+  - pango                    
+  - libvorbis                
+  - gst-plugins-base         
+  - soundtouch               
+  - libdvdread               
+  - libdvdnav                
+  - gst-plugins-bad          
+  - lame                     
+  - speex                    
+  - libsndfile               
+  - pulseaudio               
+  - nettle                   
+  - gnutls                   
+  - libvpx                   
+  - glib-networking          
+  - libsoup2                 
+  - libsoup3                 
+  - gst-plugins-good         
+  - libxkbcommon                     
 extras: []

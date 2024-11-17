@@ -19,9 +19,10 @@ sed -i '1i#include <stdio.h>'                                      \
     ../subprojects/mocklibc-1.0/src/netgroup.h
 
 ninja
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install
 
-cat > /etc/polkit-1/rules.d/40-adm.rules << "EOF"
+mkdir -p $LFS_PCK_DIR/etc/polkit-1/rules.d/
+cat > $LFS_PCK_DIR/etc/polkit-1/rules.d/40-adm.rules << "EOF"
 polkit.addAdminRule(function(action, subject) {
    return ["unix-group:adm"];
    });

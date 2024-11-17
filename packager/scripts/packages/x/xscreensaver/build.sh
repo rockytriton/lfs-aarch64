@@ -1,8 +1,10 @@
 ./configure --prefix=/usr 
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 
-cat > /etc/pam.d/xscreensaver << "EOF"
+mkdir -p $LFS_PCK_DIR/etc/pam.d
+
+cat > $LFS_PCK_DIR/etc/pam.d/xscreensaver << "EOF"
 # Begin /etc/pam.d/xscreensaver
 
 auth    include system-auth

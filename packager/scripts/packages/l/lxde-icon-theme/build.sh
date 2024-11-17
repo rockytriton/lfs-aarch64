@@ -1,6 +1,5 @@
 
 ./configure --prefix=/usr 
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 
-gtk-update-icon-cache -qf /usr/share/icons/nuoveXT2
