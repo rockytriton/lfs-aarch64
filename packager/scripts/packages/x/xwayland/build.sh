@@ -8,4 +8,4 @@ meson setup ..                       \
       --buildtype=release            \
       -D xkb_output_dir=/var/lib/xkb 
 ninja
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install

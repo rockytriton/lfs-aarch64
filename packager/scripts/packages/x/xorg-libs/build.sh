@@ -1,3 +1,5 @@
+echo "Staring xorg-libs build... $XORG_PREFIX"
+
 cat > lib-7.md5 << "EOF"
 12344cd74a1eb25436ca6e6a2cf93097  xtrans-1.5.0.tar.xz
 5b8fa54e0ef94136b56f887a5e6cf6c9  libX11-1.8.10.tar.xz
@@ -48,6 +50,8 @@ do
   pushd $packagedir
   docdir="--docdir=$XORG_PREFIX/share/doc/$packagedir"
   
+  echo "Configuring $package..."
+
   case $packagedir in
     libXfont2-[0-9]* )
       ./configure $XORG_CONFIG $docdir --disable-devel-docs
@@ -67,7 +71,10 @@ do
       cd    build
         meson setup --prefix=$XORG_PREFIX --buildtype=release ..
         ninja
-        ninja install
+        DESTDIR=$LFS_PCK_DIR ninja install
+
+        echo "Installing..."
+        cp -vr $LFS_PCK_DIR/* /
       popd     # $packagedir
       continue # for loop
     ;;
@@ -77,9 +84,16 @@ do
     ;;
   esac
 
+  echo "Making"
   make
-  make install
+  echo "Installing"
+  make DESTDIR=$LFS_PCK_DIR install
+  echo "Installing..."
+  cp -vr $LFS_PCK_DIR/* /
   popd
   rm -rf $packagedir
+
+  echo "Calling LD Config"
   /sbin/ldconfig
+  echo "Done LD Config"
 done

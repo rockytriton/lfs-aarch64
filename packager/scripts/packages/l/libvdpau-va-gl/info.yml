@@ -1,0 +1,5 @@
+name: "libvdpau-va-gl"
+version: "0.4.2"
+source: "https://github.com/i-rinat/libvdpau-va-gl/archive/v0.4.2/libvdpau-va-gl-0.4.2.tar.gz"
+dependencies: []
+extras: []

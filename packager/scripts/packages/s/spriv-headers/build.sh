@@ -4,4 +4,4 @@ cd    build
 cmake -D CMAKE_INSTALL_PREFIX=/usr -G Ninja .. 
 ninja
 
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install

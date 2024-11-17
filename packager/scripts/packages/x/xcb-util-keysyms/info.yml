@@ -1,0 +1,5 @@
+name: "xcb-util-keysyms"
+version: "0.4.1"
+source: "https://xcb.freedesktop.org/dist/xcb-util-keysyms-0.4.1.tar.xz"
+dependencies: []
+extras: []

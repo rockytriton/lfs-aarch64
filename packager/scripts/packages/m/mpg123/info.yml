@@ -1,0 +1,5 @@
+name: "mpg123"
+version: "1.32.7"
+source: "https://downloads.sourceforge.net/mpg123/mpg123-1.32.7.tar.bz2"
+dependencies: []
+extras: []

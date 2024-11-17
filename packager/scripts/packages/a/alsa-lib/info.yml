@@ -1,0 +1,5 @@
+name: "alsa-lib"
+version: "1.2.12"
+source: "https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.12.tar.bz2"
+dependencies: []
+extras: []

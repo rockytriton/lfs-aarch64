@@ -1,0 +1,5 @@
+name: "cairo"
+version: "1.18.0"
+source: "https://www.cairographics.org/releases/cairo-1.18.0.tar.xz"
+dependencies: []
+extras: []

@@ -1,0 +1,5 @@
+name: "cdparanoia"
+version: "10.2"
+source: "https://downloads.xiph.org/releases/cdparanoia/cdparanoia-III-10.2.src.tgz"
+dependencies: []
+extras: []

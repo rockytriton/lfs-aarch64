@@ -1,0 +1,5 @@
+name: "pango"
+version: "1.54.0"
+source: "https://download.gnome.org/sources/pango/1.54/pango-1.54.0.tar.xz"
+dependencies: []
+extras: []

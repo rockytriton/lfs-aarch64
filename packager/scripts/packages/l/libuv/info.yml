@@ -1,0 +1,5 @@
+name: "libuv"
+version: "1.48.0"
+source: "https://dist.libuv.org/dist/v1.48.0/libuv-v1.48.0.tar.gz"
+dependencies: []
+extras: []

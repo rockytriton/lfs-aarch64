@@ -1,0 +1,5 @@
+name: "shared-mime-info"
+version: "2.4"
+source: "https://gitlab.freedesktop.org/xdg/shared-mime-info/-/archive/2.4/shared-mime-info-2.4.tar.gz"
+dependencies: []
+extras: []

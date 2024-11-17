@@ -1,0 +1,5 @@
+name: "spriv-tools"
+version: "1.3.290.0"
+source: "https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.3.290.0/SPIRV-Tools-1.3.290.0.tar.gz"
+dependencies: []
+extras: []

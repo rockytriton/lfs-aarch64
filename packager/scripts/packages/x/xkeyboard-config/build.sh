@@ -5,6 +5,4 @@ cd    build
 
 meson setup --prefix=$XORG_PREFIX --buildtype=release .. 
 ninja
-
-
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install

@@ -1,0 +1,5 @@
+name: "xmlto"
+version: "0.0.29"
+source: "https://pagure.io/xmlto/archive/0.0.29/xmlto-0.0.29.tar.gz"
+dependencies: []
+extras: []

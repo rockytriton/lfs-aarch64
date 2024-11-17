@@ -11,6 +11,6 @@ meson setup ..              \
       -D xkb_output_dir=/var/lib/xkb 
 ninja
 
-ninja install 
-mkdir -pv /etc/X11/xorg.conf.d
+DESTDIR=$LFS_PCK_DIR ninja install 
+mkdir -pv $LFS_PCK_DIR/etc/X11/xorg.conf.d
 

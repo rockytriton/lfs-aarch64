@@ -1,0 +1,5 @@
+name: "pixman"
+version: "0.43.4"
+source: "https://www.cairographics.org/releases/pixman-0.43.4.tar.gz"
+dependencies: []
+extras: []

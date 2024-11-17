@@ -1,0 +1,5 @@
+name: "fribidi"
+version: ""
+source: "https://github.com/fribidi/fribidi/releases/download/v1.0.15/fribidi-1.0.15.tar.xz"
+dependencies: []
+extras: []

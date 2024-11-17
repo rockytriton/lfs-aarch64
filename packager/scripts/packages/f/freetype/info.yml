@@ -1,0 +1,5 @@
+name: "freetype"
+version: "2.13.3"
+source: "https://downloads.sourceforge.net/freetype/freetype-2.13.3.tar.xz"
+dependencies: []
+extras: []

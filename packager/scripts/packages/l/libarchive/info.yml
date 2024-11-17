@@ -1,0 +1,5 @@
+name: "libarchive"
+version: "3.7.4"
+source: "https://github.com/libarchive/libarchive/releases/download/v3.7.4/libarchive-3.7.4.tar.xz"
+dependencies: []
+extras: []

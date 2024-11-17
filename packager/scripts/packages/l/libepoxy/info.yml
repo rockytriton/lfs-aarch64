@@ -1,0 +1,5 @@
+name: "libepoxy"
+version: "1.5.10"
+source: "https://download.gnome.org/sources/libepoxy/1.5/libepoxy-1.5.10.tar.xz"
+dependencies: []
+extras: []

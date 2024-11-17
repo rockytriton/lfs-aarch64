@@ -1,0 +1,5 @@
+name: "opus"
+version: "1.5.2"
+source: "https://downloads.xiph.org/releases/opus/opus-1.5.2.tar.gz"
+dependencies: []
+extras: []

@@ -1,0 +1,5 @@
+name: "vulkan-headers"
+version: "1.3.294"
+source: "https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.3.294/Vulkan-Headers-1.3.294.tar.gz"
+dependencies: []
+extras: []

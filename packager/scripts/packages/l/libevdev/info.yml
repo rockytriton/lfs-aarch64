@@ -1,0 +1,5 @@
+name: "libevdev"
+version: "1.13.2"
+source: "https://www.freedesktop.org/software/libevdev/libevdev-1.13.2.tar.xz"
+dependencies: []
+extras: []

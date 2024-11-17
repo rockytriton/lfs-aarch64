@@ -1,0 +1,5 @@
+name: "hwdata"
+version: "0.385"
+source: "https://github.com/vcrhonek/hwdata/archive/v0.385/hwdata-0.385.tar.gz"
+dependencies: []
+extras: []

@@ -1,0 +1,5 @@
+name: "pciutils"
+version: "3.13.0"
+source: "https://mj.ucw.cz/download/linux/pci/pciutils-3.13.0.tar.gz"
+dependencies: []
+extras: []

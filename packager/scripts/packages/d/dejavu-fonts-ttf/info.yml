@@ -1,0 +1,5 @@
+name: "dejavu-fonts-ttf"
+version: "2.37"
+source: "https://github.com/rockytriton/lfs-fix-packages/raw/refs/heads/main/dejavu-fonts-ttf-2.37.txz"
+dependencies: []
+extras: []

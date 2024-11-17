@@ -1,0 +1,5 @@
+name: "glslang"
+version: "14.3.0"
+source: "https://github.com/KhronosGroup/glslang/archive/14.3.0/glslang-14.3.0.tar.gz"
+dependencies: []
+extras: []

@@ -7,7 +7,7 @@ TERMINFO=/usr/share/terminfo \
     --with-app-defaults=/etc/X11/app-defaults
 
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 
-mkdir -pv /usr/share/applications &&
-cp -v *.desktop /usr/share/applications/
+mkdir -pv $LFS_PCK_DIR/usr/share/applications 
+cp -v *.desktop $LFS_PCK_DIR/usr/share/applications/

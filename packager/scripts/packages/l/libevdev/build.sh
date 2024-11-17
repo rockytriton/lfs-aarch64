@@ -7,5 +7,5 @@ meson setup ..                  \
       --buildtype=release       \
       -D documentation=disabled 
 ninja
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install
 

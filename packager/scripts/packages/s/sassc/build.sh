@@ -7,11 +7,12 @@ autoreconf -fi
 
 ./configure --prefix=/usr --disable-static 
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
+cp -r $LFS_PCK_DIR/* /
 
 popd 
 autoreconf -fi 
 
 ./configure --prefix=/usr 
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install

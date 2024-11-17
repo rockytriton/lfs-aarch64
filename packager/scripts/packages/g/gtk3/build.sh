@@ -9,10 +9,10 @@ meson setup ..                 \
       -D broadway_backend=true
 
 ninja
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install
 
-mkdir -vp /etc/gtk-3.0
-cat > /etc/gtk-3.0/settings.ini << "EOF"
+mkdir -vp $LFS_PCK_DIR/etc/gtk-3.0
+cat > $LFS_PCK_DIR/etc/gtk-3.0/settings.ini << "EOF"
 [Settings]
 gtk-theme-name = Adwaita
 gtk-icon-theme-name = hicolor
@@ -26,7 +26,7 @@ gtk-xft-rgba = rgb
 gtk-cursor-theme-name = Adwaita
 EOF
 
-cat > /etc/gtk-3.0/gtk.css << "EOF"
+cat > $LFS_PCK_DIR/etc/gtk-3.0/gtk.css << "EOF"
 *  {
    -GtkScrollbar-has-backward-stepper: 1;
    -GtkScrollbar-has-forward-stepper: 1;

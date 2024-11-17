@@ -10,5 +10,5 @@ meson setup ..                  \
       -D libwacom=false         \
       -D udev-dir=/usr/lib/udev 
 ninja
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install
 

@@ -1,0 +1,5 @@
+name: "librsvg"
+version: "2.58.3"
+source: "https://download.gnome.org/sources/librsvg/2.58/librsvg-2.58.3.tar.xz"
+dependencies: []
+extras: []

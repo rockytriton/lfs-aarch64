@@ -1,0 +1,5 @@
+name: "libsoup2"
+version: "2.74.3"
+source: "https://ftp2.osuosl.org/pub/blfs/conglomeration/libsoup/libsoup-2.74.3.tar.xz"
+dependencies: []
+extras: []

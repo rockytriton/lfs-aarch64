@@ -9,5 +9,5 @@ sed -i '/"lib64"/s/64//' Modules/GNUInstallDirs.cmake
             --no-system-librhash \
             --docdir=/share/doc/cmake-3.30.2
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 

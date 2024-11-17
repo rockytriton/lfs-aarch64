@@ -1,6 +1,7 @@
 
 ./configure --prefix=/usr --disable-static 
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 
-install -v -m644 doc/Vorbis* /usr/share/doc/libvorbis-1.3.7
+mkdir -p $LFS_PCK_DIR/usr/share/doc/
+install -v -m644 doc/Vorbis* $LFS_PCK_DIR/usr/share/doc/libvorbis-1.3.7

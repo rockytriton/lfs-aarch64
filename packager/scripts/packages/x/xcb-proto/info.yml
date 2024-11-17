@@ -1,0 +1,5 @@
+name: "xcb-proto"
+version: "1.17.0"
+source: "https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-1.17.0.tar.xz"
+dependencies: []
+extras: []

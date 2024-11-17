@@ -8,5 +8,5 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr     \
       -D GLSLANG_TESTS=ON              \
       -G Ninja .. 
 ninja
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install
 

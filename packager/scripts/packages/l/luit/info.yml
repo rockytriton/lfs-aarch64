@@ -1,0 +1,5 @@
+name: "luit"
+version: "2024.01.02"
+source: "https://invisible-mirror.net/archives/luit/luit-20240102.tgz"
+dependencies: []
+extras: []

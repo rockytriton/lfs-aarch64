@@ -1,0 +1,5 @@
+name: "xorg-apps"
+version: "12.2"
+source: "none"
+dependencies: []
+extras: []

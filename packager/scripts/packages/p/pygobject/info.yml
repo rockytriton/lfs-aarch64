@@ -1,0 +1,5 @@
+name: "pygobject"
+version: "3.48.2"
+source: "https://download.gnome.org/sources/pygobject/3.48/pygobject-3.48.2.tar.xz"
+dependencies: []
+extras: []

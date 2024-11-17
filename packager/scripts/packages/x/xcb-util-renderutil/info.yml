@@ -1,0 +1,5 @@
+name: "xcb-util-renderutil"
+version: "0.3.10"
+source: "https://xcb.freedesktop.org/dist/xcb-util-renderutil-0.3.10.tar.xz"
+dependencies: []
+extras: []

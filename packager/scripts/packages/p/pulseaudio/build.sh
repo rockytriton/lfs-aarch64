@@ -9,6 +9,6 @@ meson setup --prefix=/usr       \
             -D bluez5=disabled   \
             ..    
 ninja
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install
 
-rm /usr/share/dbus-1/system.d/pulseaudio-system.conf
+rm $LFS_PCK_DIR/usr/share/dbus-1/system.d/pulseaudio-system.conf

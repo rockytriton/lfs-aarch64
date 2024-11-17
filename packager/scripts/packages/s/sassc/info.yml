@@ -1,0 +1,5 @@
+name: "sassc"
+version: "3.6.2"
+source: "https://github.com/sass/sassc/archive/3.6.2/sassc-3.6.2.tar.gz"
+dependencies: []
+extras: []

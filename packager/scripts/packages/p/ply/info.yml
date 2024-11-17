@@ -1,0 +1,5 @@
+name: "ply"
+version: "3.11"
+source: "https://files.pythonhosted.org/packages/source/p/ply/ply-3.11.tar.gz"
+dependencies: []
+extras: []

@@ -1,0 +1,5 @@
+name: "spriv-headers"
+version: "1.3.290.0"
+source: "https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.3.290.0/SPIRV-Headers-1.3.290.0.tar.gz"
+dependencies: []
+extras: []

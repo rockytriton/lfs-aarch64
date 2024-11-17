@@ -1,0 +1,5 @@
+name: "lame"
+version: "3.100"
+source: "https://downloads.sourceforge.net/lame/lame-3.100.tar.gz"
+dependencies: []
+extras: []

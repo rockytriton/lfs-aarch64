@@ -1,0 +1,59 @@
+name: "xorg"
+version: "12.2"
+source: "none"
+dependencies:
+  - base-dev
+  - xorg-setup
+  - util-macros
+  - xorgproto
+  - libXau
+  - libXdmcp
+  - xcb-proto
+  - libxcb
+  - graphite2
+  - freetype-nohb
+  - harfbuzz
+  - freetype
+  - fontconfig
+  - xorg-libs
+  - dbus-x
+  - libxcvt
+  - xcb-util
+  - xcb-util-image
+  - xcb-util-keysyms
+  - xcb-util-renderutil
+  - xcb-util-wm
+  - xcb-util-cursor
+  - libvdpau
+  - libdrm
+  - libva
+  - glslang
+  - wayland
+  - wayland-protocols
+  - vulkan-headers
+  - vulkan-loader
+  - mesa
+  - libvdpau-va-gl
+  - xbitmaps
+  - xorg-apps
+  - luit
+  - xcursor-themes
+  - xorg-fonts
+  - xkeyboard-config
+  - pixman
+  - libepoxy
+  - xwayland
+  - xorg-server
+  - mtdev
+  - libevdev
+  - xf86-input-evdev
+  - libinput
+  - xf86-input-libinput
+  - xf86-input-synaptics
+  - twm
+  - xterm
+  - xclock
+  - xinit
+  - dejavu-fonts-ttf
+  - xorg-legacy
+extras: []

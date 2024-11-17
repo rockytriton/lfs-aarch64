@@ -1,0 +1,5 @@
+name: "libsigc++"
+version: "3.6.0"
+source: "https://download.gnome.org/sources/libsigc++/3.6/libsigc++-3.6.0.tar.xz"
+dependencies: []
+extras: []

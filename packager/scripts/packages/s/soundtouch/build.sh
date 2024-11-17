@@ -3,5 +3,5 @@
             --docdir=/usr/share/doc/soundtouch-2.3.3 
 make
 
-make install
+make DESTDIR=$LFS_PCK_DIR install
 

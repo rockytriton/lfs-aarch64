@@ -23,7 +23,8 @@ sed 's/utility/tool/' -i utils/FileCheck/CMakeLists.txt
 mkdir -v build 
 cd       build 
 
-CC=gcc CXX=g++                               \
+
+MAKEFLAGS=-j1 CC=gcc CXX=g++                               \
 cmake -D CMAKE_INSTALL_PREFIX=/usr           \
       -D CMAKE_SKIP_INSTALL_RPATH=ON         \
       -D LLVM_ENABLE_FFI=ON                  \
@@ -36,13 +37,14 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr           \
       -D LLVM_INCLUDE_BENCHMARKS=OFF         \
       -D CLANG_DEFAULT_PIE_ON_LINUX=ON       \
       -D CLANG_CONFIG_FILE_SYSTEM_DIR=/etc/clang \
-      -W no-dev -G Ninja ..                  
-ninja
+      -W no-dev ..                  
+MAKEFLAGS=-j$(nproc)
 
-ninja install
+make
+make DESTDIR=$LFS_PCK_DIR install
 
-mkdir -pv /etc/clang &&
+mkdir -pv $LFS_PCK_DIR/etc/clang &&
 for i in clang clang++; do
-  echo -fstack-protector-strong > /etc/clang/$i.cfg
+  echo -fstack-protector-strong > $LFS_PCK_DIR/etc/clang/$i.cfg
 done
 

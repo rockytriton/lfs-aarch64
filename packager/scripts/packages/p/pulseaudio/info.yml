@@ -1,0 +1,5 @@
+name: "pulseaudio"
+version: "17.0"
+source: "https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz"
+dependencies: []
+extras: []

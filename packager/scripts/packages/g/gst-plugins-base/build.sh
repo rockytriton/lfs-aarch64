@@ -6,4 +6,4 @@ meson setup ..               \
       --buildtype=release    \
       --wrap-mode=nodownload 
 ninja
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install

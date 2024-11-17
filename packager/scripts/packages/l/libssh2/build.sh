@@ -12,5 +12,5 @@ sed 's/ssh-dss,//' -i tests/openssh_server/sshd_config
             --disable-static 
             
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 

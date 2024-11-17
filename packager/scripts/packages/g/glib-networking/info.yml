@@ -1,0 +1,5 @@
+name: "glib-networking"
+version: "2.80.0"
+source: "https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.0.tar.xz"
+dependencies: []
+extras: []

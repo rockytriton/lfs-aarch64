@@ -1,0 +1,5 @@
+name: "graphviz"
+version: "12.1.0"
+source: "https://gitlab.com/graphviz/graphviz/-/archive/12.1.0/graphviz-12.1.0.tar.bz2"
+dependencies: []
+extras: []

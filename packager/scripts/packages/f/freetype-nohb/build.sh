@@ -6,5 +6,5 @@ sed -r "s:.*(#.*SUBPIXEL_RENDERING) .*:\1:" \
 
 ./configure --prefix=/usr --enable-freetype-config --disable-static 
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 

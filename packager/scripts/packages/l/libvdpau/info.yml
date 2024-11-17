@@ -1,0 +1,5 @@
+name: "libvdpau"
+version: "1.5"
+source: "https://gitlab.freedesktop.org/vdpau/libvdpau/-/archive/1.5/libvdpau-1.5.tar.bz2"
+dependencies: []
+extras: []

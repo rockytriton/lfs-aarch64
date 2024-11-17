@@ -1,0 +1,5 @@
+name: "libXau"
+version: "1.0.11"
+source: "https://www.x.org/pub/individual/lib/libXau-1.0.11.tar.xz"
+dependencies: []
+extras: []

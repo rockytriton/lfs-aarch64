@@ -1,0 +1,5 @@
+name: "iso"
+version: "4.17.0"
+source: "https://ftp.debian.org/debian/pool/main/i/iso-codes/iso-codes_4.17.0.orig.tar.xz"
+dependencies: []
+extras: []

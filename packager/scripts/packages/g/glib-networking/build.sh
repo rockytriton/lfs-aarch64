@@ -7,5 +7,5 @@ meson setup             \
    -D libproxy=disabled \
    .. 
 ninja
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install
 

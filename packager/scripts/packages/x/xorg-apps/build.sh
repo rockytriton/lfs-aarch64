@@ -48,9 +48,9 @@ do
   pushd $packagedir
      ./configure $XORG_CONFIG
      make
-     make install
+     make DESTDIR=$LFS_PCK_DIR install
   popd
   rm -rf $packagedir
 done
 
-rm -f $XORG_PREFIX/bin/xkeystone
+rm -f $LFS_PCK_DIR/$XORG_PREFIX/bin/xkeystone

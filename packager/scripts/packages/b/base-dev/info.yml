@@ -1,0 +1,46 @@
+name: "base-dev"
+version: "12.2"
+source: "none"
+dependencies:
+    - base
+    - xmlto
+    - nghttp2
+    - libuv
+    - libarchive
+    - yaml
+    - curl
+    - pcre2
+    - libssh2
+    - alsa-lib
+    - iso
+    - giflib
+    - hwdata
+    - pciutils
+    - libogg
+    - opus
+    - flac
+    - libgpg-error
+    - libgcrypt
+    - mpg123
+    - libusb
+    - which
+    - cmake
+    - llvm
+    - ply
+    - mako
+    - cython
+    - pyyaml
+    - spriv-headers
+    - spriv-tools
+    - spriv-translator
+    - libclc
+    - rustc
+    - rust-bindgen
+    - cbindgen
+    - nasm
+    - libtiff
+    - libjpeg-turbo
+    - libpng
+    - boost
+    - libsigc++
+extras: []

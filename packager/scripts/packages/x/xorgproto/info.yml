@@ -1,0 +1,5 @@
+name: "xorgproto"
+version: "2024.1"
+source: "https://xorg.freedesktop.org/archive/individual/proto/xorgproto-2024.1.tar.xz"
+dependencies: []
+extras: []

@@ -1,0 +1,5 @@
+name: "xf86-input-synaptics"
+version: "1.9.2"
+source: "https://www.x.org/pub/individual/driver/xf86-input-synaptics-1.9.2.tar.xz"
+dependencies: []
+extras: []

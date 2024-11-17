@@ -1,0 +1,5 @@
+name: "libva"
+version: "2.22.0"
+source: "https://github.com/intel/libva/archive/2.22.0/libva-2.22.0.tar.gz"
+dependencies: []
+extras: []

@@ -1,3 +1,4 @@
-pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir $PWD
+mkdir $LFS_PCK_DIR/tmp/
 
-pip3 install --no-index --find-links=dist --no-cache-dir --no-user Cython
+pip3 wheel -w $LFS_PCK_DIR/tmp/dist --no-build-isolation --no-deps --no-cache-dir $PWD
+

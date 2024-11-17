@@ -1,0 +1,5 @@
+name: "libdrm"
+version: "2.4.122"
+source: "https://dri.freedesktop.org/libdrm/libdrm-2.4.122.tar.xz"
+dependencies: []
+extras: []

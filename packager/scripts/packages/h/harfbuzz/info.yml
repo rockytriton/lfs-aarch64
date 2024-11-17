@@ -1,0 +1,5 @@
+name: "harfbuzz"
+version: "9.0.0"
+source: "https://github.com/harfbuzz/harfbuzz/releases/download/9.0.0/harfbuzz-9.0.0.tar.xz"
+dependencies: []
+extras: []

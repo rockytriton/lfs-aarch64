@@ -8,5 +8,5 @@ meson setup ..             \
       -D graphite2=enabled 
 ninja
 
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install
 

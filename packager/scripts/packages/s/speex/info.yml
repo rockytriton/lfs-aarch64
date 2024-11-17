@@ -1,0 +1,5 @@
+name: "speex"
+version: ""
+source: "https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz"
+dependencies: []
+extras: []

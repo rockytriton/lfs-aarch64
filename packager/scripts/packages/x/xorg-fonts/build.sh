@@ -24,12 +24,12 @@ do
   pushd $packagedir
     ./configure $XORG_CONFIG
     make
-    make install
+    make DESTDIR=$LFS_PCK_DIR install
   popd
   rm -rf $packagedir
 done
 
-install -v -d -m755 /usr/share/fonts                               &&
-ln -svfn $XORG_PREFIX/share/fonts/X11/OTF /usr/share/fonts/X11-OTF &&
-ln -svfn $XORG_PREFIX/share/fonts/X11/TTF /usr/share/fonts/X11-TTF
+install -v -d -m755 $LFS_PCK_DIR/usr/share/fonts                               
+ln -svfn $XORG_PREFIX/share/fonts/X11/OTF $LFS_PCK_DIR/usr/share/fonts/X11-OTF 
+ln -svfn $XORG_PREFIX/share/fonts/X11/TTF $LFS_PCK_DIR/usr/share/fonts/X11-TTF
 

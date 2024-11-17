@@ -9,5 +9,5 @@ meson setup --prefix=/usr       \
             -D sysprof=disabled \
             ..  
 ninja
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install
 

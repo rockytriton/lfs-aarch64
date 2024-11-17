@@ -1,3 +1,5 @@
 cargo build --release
 
-install -v -m755 target/release/bindgen /usr/bin
+mkdir -p $LFS_PCK_DIR/usr/bin
+
+install -v -m755 target/release/bindgen $LFS_PCK_DIR/usr/bin

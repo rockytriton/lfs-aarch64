@@ -1,0 +1,5 @@
+name: "curl"
+version: "8.9.1"
+source: "https://curl.se/download/curl-8.9.1.tar.xz"
+dependencies: []
+extras: []

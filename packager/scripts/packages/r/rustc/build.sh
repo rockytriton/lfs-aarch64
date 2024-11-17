@@ -64,7 +64,7 @@ EOF
 { [ ! -e /usr/include/sqlite3.h ] ||
   export LIBSQLITE3_SYS_USE_PKG_CONFIG=1; } 
 
-export NINJAJOBS=3
+export NINJAJOBS=5
 
 echo ""
 echo "RUNNING PY BUILD"
@@ -76,29 +76,38 @@ echo ""
 echo "PY INSTALL"
 echo ""
 
-python3 x.py install rustc std 
+DESTDIR=$LFS_PCK_DIR python3 x.py install rustc std 
 
+mkdir -p $LFS_PCK_DIR/opt/rustc-1.80.1/bin/
+
+mkdir -p $LFS_PCK_DIR/opt/rustc-1.80.1/share/man/man1
 
 install -vm755 \
   build/host/stage1-tools/*/*/{cargo{,-clippy,-fmt},clippy-driver,rustfmt} \
-  /opt/rustc-1.80.1/bin &&
+  $LFS_PCK_DIR/opt/rustc-1.80.1/bin &&
 install -vDm644 \
   src/tools/cargo/src/etc/_cargo \
-  /opt/rustc-1.80.1/share/zsh/site-functions/_cargo &&
+  $LFS_PCK_DIR/opt/rustc-1.80.1/share/zsh/site-functions/_cargo &&
 install -vm644 src/tools/cargo/src/etc/man/* \
-  /opt/rustc-1.80.1/share/man/man1
+  $LFS_PCK_DIR/opt/rustc-1.80.1/share/man/man1
 
-rm -fv /opt/rustc-1.80.1/share/doc/rustc-1.80.1/*.old   &&
+mkdir -p $LFS_PCK_DIR/opt/rustc-1.80.1/share/doc/rustc-1.80.1
+
+rm -fv $LFS_PCK_DIR/opt/rustc-1.80.1/share/doc/rustc-1.80.1/*.old   &&
 install -vm644 README.md                                \
-               /opt/rustc-1.80.1/share/doc/rustc-1.80.1 &&
+               $LFS_PCK_DIR/opt/rustc-1.80.1/share/doc/rustc-1.80.1 &&
+
+mkdir -p $LFS_PCK_DIR/usr/share/zsh/site-functions
 
 install -vdm755 /usr/share/zsh/site-functions      &&
 ln -sfv /opt/rustc/share/zsh/site-functions/_cargo \
-        /usr/share/zsh/site-functions
+        $LFS_PCK_DIR/usr/share/zsh/site-functions
 
 unset LIB{SSH2,SQLITE3}_SYS_USE_PKG_CONFIG
 
-cat > /etc/profile.d/rustc.sh << "EOF"
+mkdir -p $LFS_PCK_DIR/etc/profile.d/
+
+cat > $LFS_PCK_DIR/etc/profile.d/rustc.sh << "EOF"
 # Begin /etc/profile.d/rustc.sh
 
 pathprepend /opt/rustc/bin           PATH

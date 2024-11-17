@@ -1,0 +1,5 @@
+name: "gst-plugins-base"
+version: "1.24.7"
+source: "https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.24.7.tar.xz"
+dependencies: []
+extras: []

@@ -1,0 +1,5 @@
+name: "rust-bindgen"
+version: "0.70.0"
+source: "https://github.com/rust-lang/rust-bindgen/archive/v0.70.0/rust-bindgen-0.70.0.tar.gz"
+dependencies: []
+extras: []

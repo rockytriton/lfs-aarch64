@@ -1,0 +1,5 @@
+name: "xterm"
+version: "393"
+source: "https://invisible-mirror.net/archives/xterm/xterm-393.tgz"
+dependencies: []
+extras: []

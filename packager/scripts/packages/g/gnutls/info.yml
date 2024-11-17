@@ -1,0 +1,5 @@
+name: "gnutls"
+version: "3.8.7.1"
+source: "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.7.1.tar.xz"
+dependencies: []
+extras: []

@@ -1,0 +1,22 @@
+name: "gtk3"
+version: "3.24.43"
+source: "https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.43.tar.xz"
+dependencies:
+  - xorg
+  - at-spi2-core    
+  - gsettings-desktop-schemas 
+  - shared-mime-info 
+  - gdk-pixbuf
+  - pixman    
+  - cairo    
+  - fribidi   
+  - pango    
+  - graphviz  
+  - vala    
+  - librsvg   
+  - sassc    
+  - libxkbcommon    
+  - hicolor-icon-theme    
+  - gtk3
+  - adwaita-icon-theme
+extras: []

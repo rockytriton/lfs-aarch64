@@ -1,0 +1,5 @@
+name: "wayland-protocols"
+version: "1.36"
+source: "https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.36/downloads/wayland-protocols-1.36.tar.xz"
+dependencies: []
+extras: []

@@ -1,0 +1,5 @@
+name: "xkeyboard-config"
+version: "2.42"
+source: "https://www.x.org/pub/individual/data/xkeyboard-config/xkeyboard-config-2.42.tar.xz"
+dependencies: []
+extras: []

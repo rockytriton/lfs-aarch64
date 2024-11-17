@@ -1,0 +1,5 @@
+name: "twm"
+version: "1.0.12"
+source: "https://www.x.org/pub/individual/app/twm-1.0.12.tar.xz"
+dependencies: []
+extras: []

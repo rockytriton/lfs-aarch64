@@ -1,0 +1,5 @@
+name: "soundtouch"
+version: "2.3.3"
+source: "https://www.surina.net/soundtouch/soundtouch-2.3.3.tar.gz"
+dependencies: []
+extras: []
