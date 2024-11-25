@@ -9,5 +9,5 @@ patch -Np1 -i ../0001-Use-DESTDIR-in-install-Makefile-rule.patch
 make -j1
 make DESTDIR=$LFS_PCK_DIR install
 
-chmod -v 755 $LFS_PCK_DIR/usr/lib/libcdda_*.so.0.10.2 
+chmod -v 755 $LFS_PCK_DIR/usr/lib/libcdda_*
 rm -fv $LFS_PCK_DIR/usr/lib/libcdda_*.a

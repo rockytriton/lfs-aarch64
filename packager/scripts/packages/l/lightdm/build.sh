@@ -4,7 +4,7 @@ groupadd -g 65 lightdm       &&
 useradd  -c "Lightdm Daemon" \
          -d /var/lib/lightdm \
          -u 65 -g lightdm    \
-         -s /bin/false lightdm
+         -s /bin/false lightdm || echo "lightdm user already created"
 
 ./configure --prefix=/usr                 \
             --libexecdir=/usr/lib/lightdm \

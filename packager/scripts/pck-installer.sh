@@ -56,7 +56,7 @@ if (( $num_deps > 0 )); then
     
 fi
 
-sleep 1
+#sleep 1
 
 rm -rf ${LFS_PCK_DIR:?}
 mkdir -p $LFS_PCK_DIR

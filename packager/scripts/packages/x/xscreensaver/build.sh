@@ -1,6 +1,6 @@
 ./configure --prefix=/usr 
 make
-make DESTDIR=$LFS_PCK_DIR install
+make install_prefix=$LFS_PCK_DIR install
 
 mkdir -p $LFS_PCK_DIR/etc/pam.d
 
