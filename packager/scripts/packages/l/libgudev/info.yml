@@ -1,5 +1,5 @@
 name: "libgudev"
 version: "238"
-source: "https://ftp2.osuosl.org/pub/blfs/conglomeration/libgudev/libgudev-238.tar.xz"
+source: "https://rpmfind.net/linux/gnome.org/sources/libgudev/238/libgudev-238.tar.xz"
 dependencies: []
 extras: []

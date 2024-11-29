@@ -9,6 +9,7 @@ editor=code
 
 generate_name() {
     pckname=$1
+
     arr=(${pckname//-/ })
     name_elements=$(expr ${#arr[@]} - 2)
     name=${arr[0]}
@@ -29,19 +30,36 @@ fi
 
 echo "Creating package: $pckname"
 
-echo "$pckname    $url" >> package-list$pcklist.txt
+#echo "$pckname    $url" >> package-list$pcklist.txt
 
-if [ ! -f ./packages/$pckname.sh ]; then
-cat > ./packages/$pckname.sh << "EOF"
 
-mkdir __build
-cd    __build
+firstchar=${pckname:0:1}
+mkdir -p packages/$firstchar/$pckname/
 
-meson setup --prefix=/usr --buildtype=release ..
+if [ ! -f ./packages/$firstchar/$pckname/build.sh ]; then
+cat > ./packages/$firstchar/$pckname/build.sh << "EOF"
+
+mkdir _build &&
+cd    _build &&
+
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_BUILD_TYPE=Release  \
+      -G Ninja .. &&
 ninja
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install
 
 EOF
-fi
 
-$editor ./packages/$pckname.sh
+cat > ./packages/$firstchar/$pckname/info.yml << EOF
+name: "$pckname"
+version: ""
+source: "$url"
+dependencies: []
+extras: []
+EOF
+
+fi 
+
+
+$editor ./packages/$firstchar/$pckname/info.yml
+#$editor ./packages/$firstchar/$pckname/build.sh

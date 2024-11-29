@@ -1,0 +1,5 @@
+name: "qt5-components"
+version: "5.15.14"
+source: "https://download.qt.io/archive/qt/5.15/5.15.14/single/qt-everywhere-opensource-src-5.15.14.tar.xz"
+dependencies: []
+extras: []

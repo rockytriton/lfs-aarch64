@@ -7,5 +7,5 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr \
       -D BUILD_TESTING=ON          \
       .. 
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 

@@ -4,7 +4,7 @@ patch -Np1 -i ../colord-1.4.7-upstream_fixes-1.patch
 
 groupadd -g 71 colord &&
 useradd -c "Color Daemon Owner" -d /var/lib/colord -u 71 \
-        -g colord -s /bin/false colord
+        -g colord -s /bin/false colord || echo "colord user already exists"
 
 mkdir build 
 cd    build 
@@ -22,4 +22,4 @@ meson setup ..                  \
       -D man=false              
 ninja
 
-ninja install
+DESTDIR=$LFS_PCK_DIR ninja install

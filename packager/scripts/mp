@@ -9,6 +9,7 @@ editor=code
 
 generate_name() {
     pckname=$1
+
     arr=(${pckname//-/ })
     name_elements=$(expr ${#arr[@]} - 2)
     name=${arr[0]}
@@ -29,17 +30,31 @@ fi
 
 echo "Creating package: $pckname"
 
-echo "$pckname    $url" >> package-list$pcklist.txt
+#echo "$pckname    $url" >> package-list$pcklist.txt
 
-if [ ! -f ./packages/$pckname.sh ]; then
-cat > ./packages/$pckname.sh << "EOF"
+
+firstchar=${pckname:0:1}
+mkdir -p packages/$firstchar/$pckname/
+
+if [ ! -f ./packages/$firstchar/$pckname/build.sh ]; then
+cat > ./packages/$firstchar/$pckname/build.sh << "EOF"
 
 ./configure --prefix=/usr --disable-static 
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 
 EOF
+
+cat > ./packages/$firstchar/$pckname/info.yml << EOF
+name: "$pckname"
+version: ""
+source: "$url"
+dependencies: []
+extras: []
+EOF
+
 fi 
 
 
-$editor ./packages/$pckname.sh
+$editor ./packages/$firstchar/$pckname/info.yml
+#$editor ./packages/$firstchar/$pckname/build.sh

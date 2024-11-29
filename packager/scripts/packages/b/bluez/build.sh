@@ -1,12 +1,15 @@
+
 ./configure --prefix=/usr         \
             --sysconfdir=/etc     \
             --localstatedir=/var  \
             --disable-manpages    \
-            --enable-library
+            --enable-library 
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 
-ln -svf ../libexec/bluetooth/bluetoothd /usr/sbin
+mkdir -p $LFS_PCK_DIR/usr/sbin
 
-install -v -dm755 /etc/bluetooth 
-install -v -m644 src/main.conf /etc/bluetooth/main.conf
+ln -svf ../libexec/bluetooth/bluetoothd $LFS_PCK_DIR/usr/sbin
+install -v -dm755 $LFS_PCK_DIR/etc/bluetooth &&
+install -v -m644 src/main.conf $LFS_PCK_DIR/etc/bluetooth/main.conf
+

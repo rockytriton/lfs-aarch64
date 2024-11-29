@@ -1,0 +1,5 @@
+name: "breeze-icons"
+version: "6.5.0"
+source: "https://download.kde.org/stable/frameworks/6.5/breeze-icons-6.5.0.tar.xz"
+dependencies: []
+extras: []

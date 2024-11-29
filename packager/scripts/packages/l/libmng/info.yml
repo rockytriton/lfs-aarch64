@@ -1,0 +1,5 @@
+name: "libmng"
+version: "2.0.3"
+source: "https://downloads.sourceforge.net/libmng/libmng-2.0.3.tar.xz"
+dependencies: []
+extras: []

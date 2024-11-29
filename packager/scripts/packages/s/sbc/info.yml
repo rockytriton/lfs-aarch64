@@ -1,0 +1,6 @@
+name: "sbc"
+version: "2.0"
+source: "https://www.kernel.org/pub/linux/bluetooth/sbc-2.0.tar.xz"
+dependencies: 
+  - libsndfile
+extras: []

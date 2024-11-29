@@ -1,0 +1,65 @@
+#!/bin/bash
+# Utility to make a package
+# Usage: ./mp <URL> [Name]
+# If name not given, will try to get it from tar filename
+
+url=$1
+pckname=$2
+editor=code
+
+generate_name() {
+    pckname=$1
+
+    arr=(${pckname//-/ })
+    name_elements=$(expr ${#arr[@]} - 2)
+    name=${arr[0]}
+
+    for i in $(seq 1 $name_elements);
+    do
+        name="$name-${arr[$i]}"
+    done
+
+    echo $name
+}
+
+if [ "$pckname" == "" ]; then
+    bn=$(basename $url)
+    pckname=${bn%.t*}
+    pckname=$(generate_name $pckname)
+fi
+
+echo "Creating package: $pckname"
+
+#echo "$pckname    $url" >> package-list$pcklist.txt
+
+
+firstchar=${pckname:0:1}
+mkdir -p packages/$firstchar/$pckname/
+
+if [ ! -f ./packages/$firstchar/$pckname/build.sh ]; then
+cat > ./packages/$firstchar/$pckname/build.sh << "EOF"
+
+mkdir _build &&
+cd    _build &&
+
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_BUILD_TYPE=Release  \
+      -W no-dev .. 
+make
+make DESTDIR=$LFS_PCK_DIR install
+
+EOF
+
+cat > ./packages/$firstchar/$pckname/info.yml << EOF
+name: "$pckname"
+version: ""
+source: "$url"
+dependencies: []
+extras: []
+EOF
+
+fi 
+
+
+$editor ./packages/$firstchar/$pckname/info.yml
+#$editor ./packages/$firstchar/$pckname/build.sh

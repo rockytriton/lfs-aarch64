@@ -301,3 +301,4 @@ qtermwidget    https://github.com/lxqt/qtermwidget/releases/download/2.0.1/qterm
 qterminal    https://github.com/lxqt/qterminal/releases/download/2.0.1/qterminal-2.0.1.tar.xz
 screengrab    https://github.com/lxqt/screengrab/releases/download/2.8.0/screengrab-2.8.0.tar.xz
 lxqt-default    https://github.com/rockytriton/lfs-aarch64/raw/refs/heads/main/bin/lxqt-default-config.txz
+phonon    https://download.kde.org/stable/phonon/4.12.0/phonon-4.12.0.tar.xz

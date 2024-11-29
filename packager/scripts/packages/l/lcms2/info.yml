@@ -1,0 +1,5 @@
+name: "lcms2"
+version: "2.16"
+source: "https://github.com/mm2/Little-CMS/releases/download/lcms2.16/lcms2-2.16.tar.gz"
+dependencies: []
+extras: []

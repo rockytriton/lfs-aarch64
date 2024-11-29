@@ -1,0 +1,6 @@
+name: "bluez"
+version: "5.77"
+source: "https://www.kernel.org/pub/linux/bluetooth/bluez-5.77.tar.xz"
+dependencies: 
+  - libical
+extras: []

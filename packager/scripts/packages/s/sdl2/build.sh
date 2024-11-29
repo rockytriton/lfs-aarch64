@@ -1,5 +1,5 @@
 
 ./configure --prefix=/usr 
 make
-make install
-rm -v /usr/lib/libSDL2*.a
+make DESTDIR=$LFS_PCK_DIR install
+rm -v $LFS_PCK_DIR/usr/lib/libSDL2*.a

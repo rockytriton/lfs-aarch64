@@ -1,0 +1,5 @@
+name: "uri"
+version: "5.28"
+source: "https://www.cpan.org/authors/id/O/OA/OALDERS/URI-5.28.tar.gz"
+dependencies: []
+extras: []

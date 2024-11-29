@@ -1,0 +1,5 @@
+name: "x264"
+version: "20240812"
+source: "https://anduin.linuxfromscratch.org/BLFS/x264/x264-20240812.tar.xz"
+dependencies: []
+extras: []

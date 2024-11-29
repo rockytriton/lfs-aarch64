@@ -1,0 +1,5 @@
+name: "colord"
+version: "1.4.7"
+source: "https://www.freedesktop.org/software/colord/releases/colord-1.4.7.tar.xz"
+dependencies: []
+extras: []

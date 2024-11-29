@@ -1,0 +1,5 @@
+name: "iptables"
+version: "1.8.10"
+source: "https://www.netfilter.org/projects/iptables/files/iptables-1.8.10.tar.xz"
+dependencies: []
+extras: []

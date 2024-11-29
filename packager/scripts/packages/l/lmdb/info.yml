@@ -1,0 +1,5 @@
+name: "lmdb"
+version: "0.9.31"
+source: "https://github.com/LMDB/lmdb/archive/LMDB_0.9.31.tar.gz"
+dependencies: []
+extras: []

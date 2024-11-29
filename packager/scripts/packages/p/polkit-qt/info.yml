@@ -1,0 +1,5 @@
+name: "polkit-qt"
+version: "1.0.200.0"
+source: "https://download.kde.org/stable/polkit-qt-1/polkit-qt-1-0.200.0.tar.xz"
+dependencies: []
+extras: []

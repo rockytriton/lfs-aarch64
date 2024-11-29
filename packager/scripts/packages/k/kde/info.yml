@@ -1,0 +1,47 @@
+name: "kde"
+version: "6.5"
+source: "none"
+dependencies:
+  - gtk3
+  - phonon
+  - vlc
+  - phonon-backend-vlc
+  - polkit-qt
+  - plasma-wayland-protocols
+  - kde-frameworks-base
+  - breeze-icons
+  - gstreamer
+  - libcanberra
+  - libical
+  - lmdb
+  - qca
+  - qrencode
+  - shared-mime-info
+  - uri
+  - aspell
+  - libdaemon
+  - qt5-components
+  - avahi
+  - libmbim
+  - libqmi
+  - modem-manager
+  - libndp
+  - dhcpcd
+  - iptables
+  - gpm
+  - slang
+  - popt
+  - newt
+  - pycairo
+  - pygobject
+  - nspr
+  - nss
+  - libnl
+  - wpa-supplicant
+  - network-manager
+  - wireplumber
+  - polkit-qt
+  - noto-fonts
+  - kde-frameworks
+  
+extras: []

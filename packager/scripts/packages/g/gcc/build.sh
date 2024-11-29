@@ -1,4 +1,8 @@
 
+cp $SCRIPTS_PATH/packages/g/gcc/gcc-patch-1.patch ..
+
+patch -Np1 -i ../gcc-patch-1.patch
+
 sed -e '/lp64=/s/lib64/lib/' -i.orig gcc/config/aarch64/t-aarch64-linux
 
 mkdir -v build

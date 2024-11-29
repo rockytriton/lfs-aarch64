@@ -1,0 +1,5 @@
+name: "sdl2"
+version: "2.30.6"
+source: "https://www.libsdl.org/release/SDL2-2.30.6.tar.gz"
+dependencies: []
+extras: []

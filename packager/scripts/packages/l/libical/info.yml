@@ -1,0 +1,5 @@
+name: "libical"
+version: "3.0.18"
+source: "https://github.com/libical/libical/releases/download/v3.0.18/libical-3.0.18.tar.gz"
+dependencies: []
+extras: []

@@ -1,0 +1,21 @@
+name: "vlc"
+version: "3.0.21"
+source: "https://download.videolan.org/vlc/3.0.21/vlc-3.0.21.tar.xz"
+dependencies:
+  - desktop-file-utils
+  - libaom
+  - libass
+  - fdk-aac
+  - lame
+  - libogg
+  - libvorbis
+  - libvpx
+  - opus
+  - pipewire
+  - x264
+  - x265
+  - ffmpeg
+  - liba52
+  - libmad
+  - lua
+extras: []

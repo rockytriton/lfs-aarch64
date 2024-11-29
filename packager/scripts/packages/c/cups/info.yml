@@ -1,0 +1,5 @@
+name: "cups"
+version: "2.4.10"
+source: "https://github.com/OpenPrinting/cups/releases/download/v2.4.10/cups-2.4.10-source.tar.gz"
+dependencies: []
+extras: []

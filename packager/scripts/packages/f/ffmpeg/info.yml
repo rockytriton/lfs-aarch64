@@ -1,0 +1,5 @@
+name: "ffmpeg"
+version: "7.0.2"
+source: "https://ffmpeg.org/releases/ffmpeg-7.0.2.tar.xz"
+dependencies: []
+extras: []

@@ -1,0 +1,5 @@
+name: "extra-cmake-modules"
+version: "6.5.0"
+source: "https://download.kde.org/stable/frameworks/6.5/extra-cmake-modules-6.5.0.tar.xz"
+dependencies: []
+extras: []

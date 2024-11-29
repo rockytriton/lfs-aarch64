@@ -1,5 +1,5 @@
 
-./configure --prefix=/usr --disable-static --disable-tester
+./configure --prefix=/usr --disable-static  --disable-tester
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 

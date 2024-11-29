@@ -1,0 +1,5 @@
+name: "lua"
+version: "5.2.4"
+source: "https://www.lua.org/ftp/lua-5.2.4.tar.gz"
+dependencies: []
+extras: []

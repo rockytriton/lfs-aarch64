@@ -1,0 +1,5 @@
+name: "plasma-wayland-protocols"
+version: "1.13.0"
+source: "https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.13.0.tar.xz"
+dependencies: []
+extras: []

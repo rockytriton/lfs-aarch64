@@ -1,0 +1,5 @@
+name: "libwebp"
+version: "1.4.0"
+source: "https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.4.0.tar.gz"
+dependencies: []
+extras: []

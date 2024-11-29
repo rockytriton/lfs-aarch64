@@ -1,0 +1,6 @@
+name: "wireplumber"
+version: "0.5.5"
+source: "https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.5/wireplumber-0.5.5.tar.bz2"
+dependencies:
+  - pipewire
+extras: []

@@ -1,0 +1,34 @@
+name: "qt6"
+version: "6.7.2"
+source: "https://download.qt.io/archive/qt/6.7/6.7.2/single/qt-everywhere-src-6.7.2.tar.xz"
+dependencies:
+  - extra-cmake-modules 
+  - nettle   
+  - gnutls   
+  - libgudev 
+  - graphviz 
+  - vala    
+  - json-glib
+  - libgusb  
+  - lcms2    
+  - polkit   
+  - colord   
+  - lynx
+  - xdg-utils
+  - cups    
+  - double-conversion
+  - gstreamer 
+  - cdparanoia
+  - libvorbis 
+  - fribidi   
+  - cairo    
+  - pango    
+  - gst-plugins-base 
+  - libxkbcommon   
+  - sdl2
+  - glu   
+  - sdl12-compat-release  
+  - libwebp
+  - jasper 
+  - libmng 
+extras: []

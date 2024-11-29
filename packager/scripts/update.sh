@@ -20,5 +20,5 @@ do
         echo "extras: []" >> $pckfile
     fi
 
-done < "package-list-xfce.txt"
+done < "package-list-qt6.txt"
 

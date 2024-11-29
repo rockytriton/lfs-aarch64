@@ -7,5 +7,5 @@
             --enable-swap-16bit-csp \
             --disable-static
 make
-make install
+make DESTDIR=$LFS_PCK_DIR install
 

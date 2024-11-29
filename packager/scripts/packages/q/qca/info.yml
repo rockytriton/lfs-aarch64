@@ -1,0 +1,5 @@
+name: "qca"
+version: "2.3.9"
+source: "https://download.kde.org/stable/qca/2.3.9/qca-2.3.9.tar.xz"
+dependencies: []
+extras: []
