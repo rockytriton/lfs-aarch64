@@ -1,0 +1,5 @@
+name: "gpgme"
+version: "1.23.2"
+source: "https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.2.tar.bz2"
+dependencies: []
+extras: []

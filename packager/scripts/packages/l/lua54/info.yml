@@ -1,0 +1,5 @@
+name: "lua54"
+version: "5.4.7"
+source: "https://www.lua.org/ftp/lua-5.4.7.tar.gz"
+dependencies: []
+extras: []

@@ -1,0 +1,5 @@
+name: "smartmontools"
+version: "7.4"
+source: "https://downloads.sourceforge.net/smartmontools/smartmontools-7.4.tar.gz"
+dependencies: []
+extras: []

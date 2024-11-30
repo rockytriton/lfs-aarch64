@@ -43,5 +43,57 @@ dependencies:
   - polkit-qt
   - noto-fonts
   - kde-frameworks
-  
+  - dolphin
+  - dolphin-plugins
+  - konsole
+  - plasma-activities
+  - libassuan
+  - gpgme
+  - openjpeg
+  - libkexiv2
+  - poppler
+  - okular
+  - libraw
+  - libkdcraw
+  - kColorPicker
+  - kImageAnnotator
+  - gwenview
+  - kirigami-addons
+  - pulseaudio-qt
+  - libdisplay-info
+  - cracklib
+  - libpwquality
+  - libqalculate
+  - libxcvt
+  - qcoro
+  - sassc
+  - xdotool
+  - libpcap
+  - lm-sensors
+  - oxygen-icons
+  - libusb
+  - upower
+  - power-profiles-daemon
+  - psutil
+  - pygdbmi
+  - certifi
+  - editables
+  - pathspec
+  - setuptools_scm
+  - pluggy
+  - trove_classifiers
+  - hatchling
+  - urllib3
+  - sentry_sdk
+  - accountsservice
+  - smartmontools
+  - fuse
+  - libfm
+  - menu-cache
+  - libexif
+  - bubblewrap
+  - xdg-desktop-portal
+  - xdg-desktop-portal-gtk
+  - kde-plasma
+  - sddm
 extras: []

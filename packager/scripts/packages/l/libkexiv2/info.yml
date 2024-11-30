@@ -1,0 +1,6 @@
+name: "libkexiv2"
+version: "24.08.0"
+source: "https://download.kde.org/stable/release-service/24.08.0/src/libkexiv2-24.08.0.tar.xz"
+dependencies: 
+  - exiv2
+extras: []

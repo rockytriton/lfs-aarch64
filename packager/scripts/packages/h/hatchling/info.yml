@@ -1,0 +1,5 @@
+name: "hatchling"
+version: "1.25.0"
+source: "https://files.pythonhosted.org/packages/source/h/hatchling/hatchling-1.25.0.tar.gz"
+dependencies: []
+extras: []

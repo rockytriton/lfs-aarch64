@@ -1,0 +1,5 @@
+name: "openjpeg"
+version: "2.5.2"
+source: "https://github.com/uclouvain/openjpeg/archive/v2.5.2/openjpeg-2.5.2.tar.gz"
+dependencies: []
+extras: []

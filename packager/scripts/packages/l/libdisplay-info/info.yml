@@ -1,0 +1,5 @@
+name: "libdisplay-info"
+version: "0.2.0"
+source: "https://gitlab.freedesktop.org/emersion/libdisplay-info/-/releases/0.2.0/downloads//libdisplay-info-0.2.0.tar.xz"
+dependencies: []
+extras: []

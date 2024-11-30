@@ -1,0 +1,5 @@
+name: "libfm"
+version: "1.3.2"
+source: "https://downloads.sourceforge.net/pcmanfm/libfm-1.3.2.tar.xz"
+dependencies: []
+extras: []

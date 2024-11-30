@@ -1,6 +1,7 @@
 export QT5PREFIX=/opt/qt5
 wget https://www.linuxfromscratch.org/patches/blfs/12.2/qt-everywhere-opensource-src-5.15.14-kf5-1.patch -P ..
 
+mkdir -p $LFS_PCK_DIR/opt/qt5
 
 patch -Np1 -i ../qt-everywhere-opensource-src-5.15.14-kf5-1.patch
 mkdir -pv qtbase/.git
@@ -22,8 +23,11 @@ sed -i -r '/base|tools|x11extras|svg|declarative|wayland/d' tempconf
 make
 make DESTDIR=$LFS_PCK_DIR install
 
+echo "finding perl files..."
 find ${LFS_PCK_DIR}$QT5PREFIX/ -name \*.prl \
    -exec sed -i -e '/^QMAKE_PRL_BUILD_DIR/d' {} \;
+
+echo "checking bin..."
 
 QT5BINDIR=$QT5PREFIX/bin
 
@@ -108,7 +112,7 @@ cat > $LFS_PCK_DIR/etc/sudoers.d/qt << "EOF"
 Defaults env_keep += QT5DIR
 EOF
 
-cat > /etc/profile.d/qt_5.sh << "EOF"
+cat > $LFS_PCK_DIR/etc/profile.d/qt_5.sh << "EOF"
 # Begin /etc/profile.d/qt_5.sh
 
 QT5DIR=/opt/qt5

@@ -1,0 +1,5 @@
+name: "libraw"
+version: "0.21.2"
+source: "https://www.libraw.org/data/LibRaw-0.21.2.tar.gz"
+dependencies: []
+extras: []

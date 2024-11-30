@@ -1,0 +1,5 @@
+name: "libfm-qt"
+version: "2.0.2"
+source: "https://github.com/lxqt/libfm-qt/releases/download/2.0.2/libfm-qt-2.0.2.tar.xz"
+dependencies: []
+extras: []

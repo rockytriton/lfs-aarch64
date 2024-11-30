@@ -1,0 +1,5 @@
+name: "okular"
+version: "24.08.0"
+source: "https://download.kde.org/stable/release-service/24.08.0/src/okular-24.08.0.tar.xz"
+dependencies: []
+extras: []

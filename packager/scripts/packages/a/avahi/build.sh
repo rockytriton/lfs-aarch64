@@ -1,3 +1,4 @@
+wget https://www.linuxfromscratch.org/patches/blfs/12.2/avahi-0.8-ipv6_race_condition_fix-1.patch -P ..
 
 groupadd -fg 84 avahi &&
 useradd -c "Avahi Daemon Owner" -d /run/avahi-daemon -u 84 \

@@ -1,0 +1,6 @@
+name: "plasma-activities"
+version: "6.1.4"
+source: "https://download.kde.org/stable/plasma/6.1.4/plasma-activities-6.1.4.tar.xz"
+dependencies:
+  - boost
+extras: []

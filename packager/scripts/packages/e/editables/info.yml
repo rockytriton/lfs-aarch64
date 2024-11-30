@@ -1,0 +1,5 @@
+name: "editables"
+version: "0.5"
+source: "https://files.pythonhosted.org/packages/source/e/editables/editables-0.5.tar.gz"
+dependencies: []
+extras: []

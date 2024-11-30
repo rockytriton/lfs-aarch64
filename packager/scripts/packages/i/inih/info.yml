@@ -1,0 +1,5 @@
+name: "inih"
+version: "58"
+source: "https://github.com/benhoyt/inih/archive/r58/inih-r58.tar.gz"
+dependencies: []
+extras: []

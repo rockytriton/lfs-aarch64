@@ -1,0 +1,5 @@
+name: "urllib3"
+version: "2.2.2"
+source: "https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.2.2.tar.gz"
+dependencies: []
+extras: []

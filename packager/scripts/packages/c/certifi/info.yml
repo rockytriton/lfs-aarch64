@@ -1,0 +1,5 @@
+name: "certifi"
+version: "2024.7.4"
+source: "https://files.pythonhosted.org/packages/source/c/certifi/certifi-2024.7.4.tar.gz"
+dependencies: []
+extras: []

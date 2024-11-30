@@ -1,0 +1,5 @@
+name: "libqalculate"
+version: "5.2.0"
+source: "https://github.com/Qalculate/libqalculate/releases/download/v5.2.0/libqalculate-5.2.0.tar.gz"
+dependencies: []
+extras: []

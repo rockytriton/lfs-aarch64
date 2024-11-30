@@ -1,0 +1,5 @@
+name: "kirigami-addons"
+version: "1.4.0"
+source: "https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.4.0.tar.xz"
+dependencies: []
+extras: []

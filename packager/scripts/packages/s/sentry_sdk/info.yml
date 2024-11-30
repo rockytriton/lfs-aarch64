@@ -1,0 +1,5 @@
+name: "sentry_sdk"
+version: "2.13.0"
+source: "https://github.com/getsentry/sentry-python/releases/download/2.13.0/sentry_sdk-2.13.0.tar.gz"
+dependencies: []
+extras: []

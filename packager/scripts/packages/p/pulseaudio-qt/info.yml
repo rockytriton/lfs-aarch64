@@ -1,0 +1,5 @@
+name: "pulseaudio-qt"
+version: "1.5.0"
+source: "https://download.kde.org/stable/pulseaudio-qt/pulseaudio-qt-1.5.0.tar.xz"
+dependencies: []
+extras: []

@@ -1,0 +1,5 @@
+name: "xdg-desktop-portal-lxqt"
+version: "1.0.2"
+source: "https://github.com/lxqt/xdg-desktop-portal-lxqt/releases/download/1.0.2/xdg-desktop-portal-lxqt-1.0.2.tar.xz"
+dependencies: []
+extras: []

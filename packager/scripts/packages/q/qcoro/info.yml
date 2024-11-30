@@ -1,0 +1,5 @@
+name: "qcoro"
+version: "0.10.0"
+source: "https://github.com/danvratil/qcoro/archive/v0.10.0/qcoro-0.10.0.tar.gz"
+dependencies: []
+extras: []

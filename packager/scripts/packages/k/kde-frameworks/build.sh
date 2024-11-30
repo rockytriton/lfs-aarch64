@@ -90,6 +90,9 @@ while read -r line; do
     tar -xf $file
     pushd $packagedir
 
+    echo "Building $packagedir"
+    echo -ne "\033]0;kde-frameworks-$packagedir\007"
+
       mkdir build
       cd    build
 
@@ -101,7 +104,14 @@ while read -r line; do
             -D BUILD_TESTING=OFF                \
             -W no-dev ..
       make
+
+      echo "Package installing $packagedir"
+
       make DESTDIR=$LFS_PCK_DIR install
+      
+      echo "Installing $packagedir"
+
+      make install
     popd
 
   rm -rf $packagedir

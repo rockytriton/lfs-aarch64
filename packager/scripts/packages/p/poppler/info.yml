@@ -1,0 +1,5 @@
+name: "poppler"
+version: "24.08.0"
+source: "https://poppler.freedesktop.org/poppler-24.08.0.tar.xz"
+dependencies: []
+extras: []

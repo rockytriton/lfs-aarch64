@@ -69,8 +69,3 @@ install -v -m644 doc/docbook/wpa_gui.8 $LFS_PCK_DIR/usr/share/man/man8/
 install -v -m644 wpa_gui-qt4/wpa_gui.desktop $LFS_PCK_DIR/usr/share/applications/ 
 install -v -m644 wpa_gui-qt4/icons/wpa_gui.svg $LFS_PCK_DIR/usr/share/pixmaps/
 
-
-./configure --prefix=/usr --disable-static 
-make
-make DESTDIR=$LFS_PCK_DIR install
-

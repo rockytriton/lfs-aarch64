@@ -1,0 +1,5 @@
+name: "psutil"
+version: "6.0.0"
+source: "https://files.pythonhosted.org/packages/source/p/psutil/psutil-6.0.0.tar.gz"
+dependencies: []
+extras: []

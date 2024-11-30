@@ -1,0 +1,7 @@
+name: "exiv2"
+version: "0.28.3"
+source: "https://github.com/Exiv2/exiv2/archive/v0.28.3/exiv2-0.28.3.tar.gz"
+dependencies: 
+  - inih
+  - brotli
+extras: []
